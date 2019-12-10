@@ -555,7 +555,7 @@
     top: 0;
     right: 0;
     width: 100px;
-    height: 48px;
+    height: 3em;
     display: block !important;
     cursor: pointer;
     z-index: 500;
