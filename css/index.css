@@ -15,8 +15,8 @@
   z-index: 0;
 }
 
-.slickTent::before {
-  content: '';
+/* .slickTent::before {
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -24,12 +24,27 @@
   z-index: 199;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
+} */
+
+.slickTent img {
+  width: 100%;
+  background-size: cover;
 }
 
 .slick a::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -37,10 +52,19 @@
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
 }
-
 
 /* .slick a .slickTent img {
   -webkit-transition: 0.3s ease-out;
@@ -119,7 +143,7 @@
 }
 
 .slickTxt h2 {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.6rem;
   color: #ffffff;
   font-weight: 700;
@@ -149,7 +173,7 @@
 }
 
 .googleAd01:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: calc(100% - 60px);
@@ -179,10 +203,10 @@
   cursor: pointer;
   letter-spacing: 0.075em;
 }
-.googleAd01OpenBtnBox .container{
+.googleAd01OpenBtnBox .container {
   position: relative;
 }
-.googleAd01OpenBtn{
+.googleAd01OpenBtn {
   top: auto;
   bottom: 0.3rem;
   right: 30px;
@@ -230,6 +254,9 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .sec01Slick a:hover .secSlickImg img {
@@ -237,18 +264,28 @@
   transform: scale(1.02);
 }
 
-.secSlickImg:before {
-  content: '';
+/* .secSlickImg:before {
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
   z-index: 5;
-}
+} */
 
 .newsTlt {
   position: absolute;
@@ -266,7 +303,7 @@
 }
 
 .newsTlt .date {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.26rem;
   line-height: 1;
   margin-top: 0.6em;
@@ -275,7 +312,7 @@
 }
 
 .pagNum {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.28rem;
   font-weight: 200;
   line-height: 1;
@@ -327,7 +364,7 @@
   align-items: flex-start;
   padding: 0.3rem 0 0.14rem 0;
 }
-.newsLisBox li:last-child{
+.newsLisBox li:last-child {
   border-bottom: none;
 }
 
@@ -347,7 +384,7 @@ a.newsListTlt:hover {
 }
 
 .newsDate {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.26rem;
   color: #6a6a6a;
   font-style: italic;
@@ -355,10 +392,9 @@ a.newsListTlt:hover {
   font-weight: 200;
 }
 
-.newsLisBox ~ .seeMore{
+.newsLisBox ~ .seeMore {
   display: none;
 }
-
 
 /** videoBox ***********************************/
 .videoBox {
@@ -367,7 +403,7 @@ a.newsListTlt:hover {
 }
 
 .videoBox:after {
-  content: '';
+  content: "";
   display: block;
   width: 150vw;
   height: 140%;
@@ -379,7 +415,7 @@ a.newsListTlt:hover {
 }
 
 .blockTlt {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.48rem;
   font-weight: 900;
   letter-spacing: 0.4em;
@@ -411,7 +447,7 @@ a.newsListTlt:hover {
 }
 
 .blockTlt:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 6.6em;
@@ -446,7 +482,7 @@ a.newsListTlt:hover {
 }
 
 .liveIcon:before {
-  content: '';
+  content: "";
   display: block;
   width: 5px;
   height: 5px;
@@ -530,15 +566,25 @@ a.seeMoreLink:hover {
 }
 
 .ePaperImg:before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 55%,
+    rgba(255, 255, 255, 1)
+  );
 }
 
 .ePaperBox .seeMore {
@@ -555,8 +601,8 @@ a.seeMoreLink:hover {
   cursor: pointer;
   overflow: hidden;
 }
-.adBanner img{
-  width: 300px!important;
+.adBanner img {
+  width: 300px !important;
 }
 
 /*  */
@@ -564,8 +610,18 @@ a.seeMoreLink:hover {
 .kv02 {
   background-color: #212121;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
 }
 
 .kv02Img {
@@ -581,7 +637,7 @@ a.seeMoreLink:hover {
 }
 
 .kv02Img::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -589,8 +645,18 @@ a.seeMoreLink:hover {
   z-index: 199;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(25%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 1)
+  );
 }
 
 /*  */
@@ -606,10 +672,9 @@ a.seeMoreLink:hover {
   width: 100%;
 }
 
-.sec_02 .mCSB_scrollTools{
-  bottom: -0.7rem!important;
+.sec_02 .mCSB_scrollTools {
+  bottom: -0.7rem !important;
 }
-
 
 /** friendBox ************************************/
 .friendBox .container {
@@ -633,7 +698,7 @@ a.seeMoreLink:hover {
 }
 
 .fndHot a {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.6rem;
   color: #ffffff;
   line-height: 1.38;
@@ -664,7 +729,7 @@ a.seeMoreLink:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
   /* width: 100%; */
-  width: 1040px!important;
+  width: 1040px !important;
   position: relative;
   max-width: 1040px;
   margin-right: 0;
@@ -688,7 +753,7 @@ a.itemLink {
   overflow: hidden;
 }
 
-.itemImg:before {
+/* .itemImg:before {
   content: '';
   display: block;
   width: 100%;
@@ -701,11 +766,14 @@ a.itemLink {
   transition: 0.3s;
   opacity: 0;
   z-index: 9;
-}
+} */
 
 .itemImg img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 p.itemTlt {
@@ -793,15 +861,25 @@ a.itemLink:hover p.itemTlt {
 }
 
 .vageBox .itemImg:after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(45%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 45%,
+    rgba(0, 0, 0, 1)
+  );
   /* background-color: #000000; */
 }
 
@@ -844,15 +922,13 @@ a.itemLink:hover .itemDescribe {
   position: relative;
 }
 
-
-
 /** sec_03 **********************************************/
 .sec_03 .container {
   padding-bottom: 2.2rem;
   padding-top: 0.8rem;
 }
 
-.sec_03 .container>.flexBox {
+.sec_03 .container > .flexBox {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -916,7 +992,7 @@ a.itemLink:hover .itemDescribe {
   width: 100%;
 }
 
-.tentBlock>li {
+.tentBlock > li {
   border-bottom: 1px solid rgba(182, 182, 182, 0.8);
   padding-bottom: 0.16rem;
   padding-top: 0.28rem;
@@ -936,8 +1012,8 @@ a.itemLink:hover .itemDescribe {
   -ms-flex-align: start;
   align-items: flex-start;
 }
-.penBox .linkTent{
-  width: calc(100% - 2.1rem)
+.penBox .linkTent {
+  width: calc(100% - 2.1rem);
 }
 .linkTentTlt {
   font-size: 0.32rem;
@@ -1005,7 +1081,7 @@ a.itemLink:hover .itemDescribe {
 }
 
 .adBannerBox:before {
-  content: '';
+  content: "";
   display: block;
   width: 80vw;
   background-color: #eff0ef;
@@ -1023,28 +1099,27 @@ a.itemLink:hover .itemDescribe {
   cursor: pointer;
   overflow: hidden;
 }
-.adBanner02 img{
-  width: 300px!important;
+.adBanner02 img {
+  width: 300px !important;
 }
 
 .adBanner02_1 {
   margin-bottom: 0.44rem;
 }
 
-
 /******************************************************/
-.sec03_5{
+.sec03_5 {
   background-color: #eff0ef;
   padding-bottom: 0.8rem;
   /* padding-top: 0.2rem; */
 }
-.sec03_5 .fxb01{
+.sec03_5 .fxb01 {
   width: 100%;
 }
-.sec03_5 .news_lb{
+.sec03_5 .news_lb {
   padding-right: 0;
   width: 100%;
 }
-.sec03_5 .tentBlock{
+.sec03_5 .tentBlock {
   max-width: none;
 }
