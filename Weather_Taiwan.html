@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>台灣一週天氣預報</title>
+
+    <link rel="stylesheet" type="text/css" href="css/css_layout.css">
+    <link rel="stylesheet" type="text/css" href="css/m_css_layout.css">
+    <style>
+        body, html{
+            width: auto;
+        }
+        .weatherBox {
+            max-width: calc(100% - 30px);
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            overflow: hidden;
+        }
+        .weatherBox a{
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            width: 100%;
+        }
+
+        .TltBlock {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 0.3rem;
+            line-height: 1;
+            letter-spacing: 0.075em;
+            color: #e60012;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 0.8rem;
+            /* max-width: 50%; */
+            margin-left: 0.8rem;
+        }
+
+        .TltBlock:before {
+            content: '';
+            display: block;
+            width: calc(100% - 9.7em);
+            height: 2px;
+            border-top: 1px solid #e60012;
+            border-bottom: 1px solid #e60012;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 2px);
+        }
+        @media screen and (max-width: 715px) {
+            .TltBlock {
+                margin-left: 0.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="weatherBox">
+        <div class="TltBlock">台灣一週天氣預報</div>
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/25d03121d57/taipei-city/" data-label_1="台北市"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">台北市 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/24d81120d97/hsinchu-city/" data-label_1="新竹市"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">新竹市 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/24d15120d67/taichung-city/" data-label_1="台中市"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">台中市 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/23d00120d23/tainan-city/" data-label_1="台南市"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">台南市 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/22d63120d30/kaohsiung-city/" data-label_1="高雄市"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">高雄市 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/24d76121d75/yilan/" data-label_1="宜蘭市"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">宜蘭市 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/23d99121d60/hualien-county/" data-label_1="花蓮市"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">花蓮市 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/22d76121d14/taitung/" data-label_1="台東縣"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">台東縣 天氣預報</a>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/zh-tw/23d57119d58/penghu-county/" data-label_1="澎湖縣"
+            data-label_2="天氣預報" data-font="微軟正黑體 (Microsoft JhengHei)" data-icons="Climacons Animated" data-days="5"
+            data-theme="pure">澎湖縣 天氣預報</a>
+    </div>
+
+    <script>
+        ! function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'weatherwidget-io-js');
+    </script>
+</body>
+
+</html>

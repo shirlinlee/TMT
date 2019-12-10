@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+
+
+  <title>人間福報</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="js.lib/slick.css">
+  <link rel="stylesheet" type="text/css" href="js.lib/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="css/css_layout.css">
+  <link rel="stylesheet" type="text/css" href="css/m_css_layout.css">
+
+  <!-- 首頁only -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/index_m.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+
+      <!-- 功能列 -->
+      <div class="hdTop">
+        <div class="container flexBox">
+          <!-- wheather bar -->
+          <div class="wheatherBox pc">
+            <div class="flexBox">
+              <div class="w_l flexBox">
+                <div class="cityBox">
+                  <div class="cloudImg"><img src="images/w.svg" alt=""></div>
+                  <div class="city">臺北市</div>
+                </div>
+                <div class="temp">
+                  30 <span>&deg;C</span>
+                </div>
+              </div>
+              <div class="w_r">
+                <div class="Westdate">2019年6月4日‧<span class="week">星期二</span></div>
+                <div class="TWdate">己亥年五月初二日</div>
+              </div>
+            </div>
+          </div>
+          <!-- logo -->
+          <h1>
+            <a href="#">
+              人間福報
+              <img src="images/logo.png" alt="人間福報">
+            </a>
+          </h1>
+          <!-- search bar -->
+          <!-- 搜尋完之後，請執行 $('.searchBox').removeClass('open') && $('.searchClick').removeClass('clicked') -->
+          <div class="searchBox flexBox">
+            <input type="text" placeholder="搜尋什麼...">
+            <button type="button">搜尋</button>
+            <div class="searchClick"></div>
+          </div>
+        </div>
+        <div class="nowDate">
+          <span class="Westdate">2019年6月4日</span>‧
+          <span class="week">星期二</span>&nbsp;
+          <span class="TWdate">己亥年五月初二日</span>
+        </div>
+      </div>
+
+      <!-- 選單列 -->
+      <div class="navBox">
+        <nav>
+          <div class="container flexBox">
+            <div class="moreBtn"><span></span><span></span><span></span></div>
+            <ul class="navList flexBox">
+              <li class="navLogo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+              </li>
+              <li class="firstUl">
+                <a href="javascript:;">星雲大師<span class="iconFont icon-cheveron-down"></span></a>
+                <ul class="inList">
+                  <li><a href="#">星雲法語</a></li>
+                  <li><a href="#">人間佛教</a></li>
+                </ul>
+              </li>
+              <li class="firstUl">
+                <a href="javascript:;">即時報<span class="iconFont icon-cheveron-down"></span></a>
+                <ul class="inList">
+                  <li><a href="#">即時新聞</a></li>
+                </ul>
+              </li>
+              <li class="firstUl">
+                <a href="javascript:;">今日新聞<span class="iconFont icon-cheveron-down"></span></a>
+                <ul class="inList">
+                  <li><a href="#">要聞</a></li>
+                  <li><a href="#">焦點</a></li>
+                  <li><a href="#">綜合</a></li>
+                  <li><a href="#">國際</a></li>
+                  <li><a href="#">兩岸</a></li>
+                  <li><a href="#">奇人妙事</a></li>
+                  <li><a href="#">醫藥</a></li>
+                  <li><a href="#">微閱讀</a></li>
+                  <li><a href="#">微視頻</a></li>
+                  <li><a href="#">微特輯</a></li>
+                </ul>
+              </li>
+              <li><a href="#">蔬食地圖</a></li>
+              <li><a href="#">友善食農</a></li>
+              <li><a href="#">達人上菜</a></li>
+              <li><a href="#">環保生態</a></li>
+              <li><a href="#">醫藥養生</a></li>
+              <!-- <li><a href="#">福報購</a></li> -->
+            </ul>
+          </div>
+
+          <!-- 次選單 -->
+          <div class="secNavListBox">
+            <div>
+              <ul class="secNavList flexBox">
+                <li>
+                  <a href="#">
+                    星雲大師
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">星雲法語</a></li>
+                    <li><a href="#">人間佛教</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    即時報
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">即時新聞</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    今日新聞
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">要聞</a></li>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">綜合</a></li>
+                    <li><a href="#">國際</a></li>
+                    <li><a href="#">兩岸</a></li>
+                    <li><a href="#">奇人妙事</a></li>
+                    <li><a href="#">醫藥</a></li>
+                    <li><a href="#">微閱讀</a></li>
+                    <li><a href="#">微視頻</a></li>
+                    <li><a href="#">微特輯</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    百年筆陣
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">社論</a></li>
+                    <li><a href="#">看人間</a></li>
+                    <li><a href="#">百年筆陣</a></li>
+                    <li><a href="#">論壇</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    覺世菩提
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+
+                  <ul class="trdNavList">
+                    <li><a href="#">覺世/宗教</a></li>
+                    <li><a href="#">千家寺院</a></li>
+                    <li><a href="#">福慧共修會</a></li>
+                    <li><a href="#">福報佛學院</a></li>
+                    <li><a href="#">生命書寫</a></li>
+                    <li><a href="#">因緣果報</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    人間善友
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">Hello People</a></li>
+                    <li><a href="#">人間善友</a></li>
+                    <li><a href="#">幸福多一點</a></li>
+                    <li><a href="#">小人物<br />大啟發</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    國際兩岸
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">全球視野</a></li>
+                    <li><a href="#">趨勢最前線</a></li>
+                    <li><a href="#">一周看點</a></li>
+                    <li><a href="#">兩岸‧<br />不可不知</a></li>
+                    <li><a href="#">兩岸‧<br />亮點人物</a></li>
+                    <li><a href="#">英文好好玩</a></li>
+                    <li><a href="#">星球大小事</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    心靈旅讀
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">藝文</a></li>
+                    <li><a href="#">副刊</a></li>
+                    <li><a href="#">縱橫古今</a></li>
+                    <li><a href="#">閱讀咖啡館</a></li>
+                    <li><a href="#">好書花園</a></li>
+                    <li><a href="#">家庭</a></li>
+                    <li><a href="#">家庭電影院</a></li>
+                    <li><a href="#">動物行星</a></li>
+                    <li><a href="#">紙上博物館</a></li>
+                    <li><a href="#">人間星聞</a></li>
+                    <li><a href="#">說聞解字</a></li>
+                    <li><a href="#">逐光獵影</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    教育運動
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">教育</a></li>
+                    <li><a href="#">運動曼陀羅</a></li>
+                    <li><a href="#">少年天地</a></li>
+                    <li><a href="#">青春up</a></li>
+                    <li><a href="#">三好校園</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    創意生活
+                    <div class="clickArr">
+                      <div class="secNavIcon"><img src="images/arrowtop.svg" alt=""></div>
+                    </div>
+                  </a>
+                  <ul class="trdNavList">
+                    <li><a href="#">創藝綠生活</a></li>
+                    <li><a href="#">旅遊</a></li>
+                    <li><a href="#">職場加油讚</a></li>
+                    <li><a href="#">八達通</a></li>
+                    <li><a href="#">消費新訊</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- m版 nav 社群連結 -->
+              <div class="m_navMediaBox">
+                <div class="flexBox">
+                  <a href="#" target="_blank" class="mediaLink">讀報教育</a>
+                  <a href="#" target="_blank" class="mediaLink">海外版</a>
+                  <a href="#" target="_blank" class="mediaSIcon fbIcon"></a>
+                  <a href="#" target="_blank" class="mediaSIcon ytIcon"></a>
+                  <a href="#" target="_blank" class="mediaSIcon igIcon">
+                    <img src="images/ig.svg" alt="">
+                  </a>
+                  <a href="#" target="_blank" class="mediaSIcon lineIcon"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="main">
+      <!-- KV -->
+      <div class="kv">
+        <div class="slick">
+          <!-- KV圖片大小 1440*573 // 內文字數限制 52字 -->
+          <!-- 1 -->
+          <a href="#">
+            <div class="slickTent">
+              <img src="images/imgkv-2.png" alt="">
+              <div class="slickTxt flexBox">
+                <h4>國際兩岸</h4>
+                <h2>笑是良藥！大笑真的能讓你更健康</h2>
+                <p>國立中央大學認知神經科學研究所教授洪蘭，以「從大腦談無畏-恐懼的神經機制」為題，說明大腦的神經連結與運作，當「心年輕，人就跟著年輕」，證實大腦的功能操之在「心」。</p>
+              </div>
+            </div>
+          </a>
+          <!-- 2 -->
+          <a href="#">
+            <div class="slickTent">
+              <img src="images/imgkv-2_2.png" alt="">
+              <div class="slickTxt flexBox">
+                <h4>國際兩岸</h4>
+                <h2>笑是良藥！大笑真的能讓你更健康02</h2>
+                <p>000國立中央大學認知神經科學研究所教授洪蘭，以「從大腦談無畏-恐懼的神經機制」為題，說明大腦的神經連結與運作，當「心年輕，人就跟著年輕」，證實大腦的功能操之在「心」。</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 開合廣告 -->
+        <div class="googleAd01OpenBtnBox">
+          <div class="container">
+            <div class="googleAd01OpenBtn">展開廣告</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- google AD 01 圖片大小 728*90-->
+      <div class="googleAd01">
+        <div>
+          <div class="gAd01Img">
+            <!--googleAD請埋在這層裡面-->
+            <img src="images/google-ad-1.png" alt="">
+          </div>
+          <div class="gAd01CloseBtn">關閉廣告</div>
+        </div>
+      </div>
+
+      <!-- social media -->
+      <div class="socialMedia m_mode">
+        <div class="container flexBox">
+          <a href="javascript:;" class="mediaLink">追蹤我們</a>
+          <a href="#" target="_blank" class="mediaSIcon fbIcon"></a>
+          <a href="#" target="_blank" class="mediaSIcon ytIcon"></a>
+          <a href="#" target="_blank" class="mediaSIcon igIcon">
+            <img src="images/ig.svg" alt="">
+          </a>
+          <a href="#" target="_blank" class="mediaSIcon lineIcon"></a>
+          <a href="#" target="_blank" class="mediaLink pad">讀報教育</a>
+          <a href="#" target="_blank" class="mediaLink pad">海外版</a>
+        </div>
+      </div>
+      <article>
+        <!-- section01 -->
+        <section class="sec_01">
+          <div class="container flexBox">
+            <div class="l_b">
+              <!-- 輪播 -->
+              <div class="sec01SlickBox">
+                <!-- 圖片大小 708*443 -->
+                <div class="sec01Slick">
+                  <!-- 1 -->
+                  <a href="#">
+                    <div class="secSlickImg"><img src="images/img-02.png" alt=""></div>
+                    <div class="newsTlt">
+                      <h3>法國蒙彼利埃住宅樓造型清奇 科技感十足</h3>
+                      <div class="date">2019.06.01</div>
+                    </div>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#">
+                    <div class="secSlickImg"><img src="images/img-02.png" alt=""></div>
+                    <div class="newsTlt">
+                      <h3>法國蒙彼利埃住宅樓造型清奇 科技感十足02</h3>
+                      <div class="date">2019.06.01</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 頁碼 -->
+                <div class="pagNum"><span class="nowP">1</span> / <span class="allP">10</span></div>
+              </div>
+
+              <!-- newsList 8則 // 字數限制 30字 // pad版 6則 // m版 5則-->
+              <ul class="newsLisBox">
+                <li>
+                  <a href="#" class="newsListTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+                <li>
+                  <a href="#" class="newsListTlt videoNews">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+                <li>
+                  <a href="#" class="newsListTlt videoNews">極端氣候來襲 雹雨狂打墨西哥</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+                <li>
+                  <a href="#" class="newsListTlt">佰元音樂會 民謠爵士搏感情</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+                <li>
+                  <a href="#" class="newsListTlt">【看世界】遺世美景不獨賞 人類瑰寶永流傳（下）vol.3</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+                <li class="onM">
+                  <a href="#" class="newsListTlt">繳水電費罰款 超商嗶電子支付</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+                <li class="pc">
+                  <a href="#" class="newsListTlt">《籃球教練》廖楚翔台灣訓練模式帶進湖南郴州</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+                <li class="pc">
+                  <a href="#" class="newsListTlt">影音／2019佛光盃籃賽 奧塔哥跳「哈卡舞」迎戰</a>
+                  <div class="newsDate">2019.06.05</div>
+                </li>
+              </ul>
+              <div class="seeMore">
+                <a href="#" class="seeMoreLink">看更多</a>
+              </div>
+
+              <!-- videoBox -->
+              <div class="videoBox">
+                <div class="blockTlt">影音專區</div>
+                <div class="liveVideo">
+                  <!-- liveIcon 如果不是直播則隱藏 -->
+                  <div class="liveIcon">直播中</div>
+                  <img src="images/videoBG.png" alt="">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/6O2EvZnoyOs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="r_b">
+              <!-- 星雲大師 -->
+              <div class="masterBox">
+                <div class="blockTlt">星雲大師</div>
+                <div class="masterNews">
+                  <div class="masterNewsImg">
+                    <!-- 圖片大小 300*180 -->
+                    <img src="images/pic.png" alt="">
+                  </div>
+                  <ul class="masterNewsList">
+                    <li>
+                      <a href="#" class="masterNewsListTlt">【星雲大師全集4金剛經講話】金剛經講話第一 諸相非如來實相分第五 (1)</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </li>
+                    <li>
+                      <a href="#" class="masterNewsListTlt">【星雲大師全集38】人間佛教當代問題座談會 佛教對喪葬習俗的看法</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </li>
+                  </ul>
+                  <div class="seeMore">
+                    <a href="#" class="seeMoreLink">看更多</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="paperP">
+                <!-- ePaper -->
+                <div class="ePaperBox">
+                  <a href="#" class="ePaperImg">
+                    <!-- 圖片大小 300*248 -->
+                    <img src="images/paper.png" alt="">
+                  </a>
+                  <div class="seeMore">
+                    <a href="#" class="seeMoreLink">歷史電子報</a>
+                  </div>
+                </div>
+
+                <!-- 訂閱電子報 -->
+                <div class="subEpaperBox">
+                  <input type="text" placeholder="請輸入電郵地址">
+                  <div class="flexBox">
+                    <button type="button">立即訂閱電子報</button>
+                    <button class="cancel" type="button">取消訂閱電子報</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- adBanner 圖片大小 300*250 -->
+              <div class="adBanner adB01">
+                <img src="images/ad-2.png" alt="">
+              </div>
+              <div class="clear"></div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="sec03_5">
+          <div class="container">
+            <!-- fxb01 -->
+            <div class="flexBox fxb01">
+              <div class="newsBb news_lb">
+                <div class="blockTlt penpen">標題標題</div>
+                <!-- 標題標題  6則 / 字數限制 22字 -->
+                <ul class="penBox tentBlock">
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt videoNews">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">絕世／宗教</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">看人間</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">論壇</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">筆陣</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">社論</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">看人間</div>
+                    </div>
+                  </li>
+
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- kv02 -->
+        <div class="kv02">
+          <div class="kv02Img">
+            <img src="images/imgkv-2_3.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- sec_02 -->
+        <section class="sec_02">
+
+          <!-- friendBox -->
+          <div class="friendBox">
+            <div class="container">
+              <!-- 頭條 -->
+              <div class="fndHot flexBox">
+                <!-- 字數限制 20字 -->
+                <a href="#">一二三四五六七八九十一二三四五六七八九十</a>
+                <p>國立中央大學認知神經科學研究所教授洪蘭，以「從大腦談無畏-恐懼的神經機制」為題，說明大腦的神經連結與運作，當「心年輕，人就跟著年輕」，證實大腦的功能操之在「心」。</p>
+              </div>
+              <!-- 頭條 -->
+
+              <div class="blockTlt">蔬食地圖</div>
+              <div class="tent">
+                <div>
+                  <div class="flexBox itlFxb">
+                    <!-- 圖片大小 300*300 正方形 -->
+                    <a href="#" class="itemLink">
+                      <div class="itemImg"><img src="images/img-9_2.png" alt=""></div>
+                      <!-- 標題 -->
+                      <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                      <!-- 日期 -->
+                      <div class="newsDate">2019.06.05</div>
+                    </a>
+                    <a href="#" class="itemLink">
+                      <div class="itemImg"><img src="images/img-9_2.png" alt=""></div>
+                      <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                      <div class="newsDate">2019.06.05</div>
+                    </a>
+
+                    <div class="lastDiv flexBox">
+                      <a href="#" class="itemLink">
+                        <div class="itemImg"><img src="images/img-9_2.png" alt=""></div>
+                        <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                        <div class="newsDate">2019.06.05</div>
+                      </a>
+                      <div class="itemSeeMore">
+                        <a href="#" class="itemSeeMoreBtn">看更多</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- vageBox -->
+          <div class="vageBox">
+            <div class="container">
+              <div class="blockTlt">友善食農</div>
+              <div class="tent">
+                <div>
+                  <div class="flexBox itlFxb">
+                    <!-- 圖片大小 300*300 正方形 -->
+                    <a href="#" class="itemLink">
+                      <div class="itemImg">
+                        <img src="images/img-6.png" alt="">
+                        <div class="itemTxtBox">
+                          <!-- 標題 -->
+                          <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                          <!-- 日期 -->
+                          <div class="newsDate">2019.06.05</div>
+                        </div>
+                      </div>
+                      <!-- 內文節錄 -->
+                      <p class="itemDescribe">
+                        尤記得10多年以前，我們只能窺見素食的一點曙光，大膽的假設(期待)素食一定是未來的飲食潮流，果真經過這幾年努力的宣傳素食，食安問題頻傳，國人吹起養生之風，漸漸關注健康的議題，而根據美國最新MarketsandMarkets
+                        的一份研究報告指出，2020年以植物為主的肉類替代品(素食製品)消費市場將達50.17億美元！</p>
+                    </a>
+
+                    <a href="#" class="itemLink">
+                      <div class="itemImg">
+                        <img src="images/img-7.png" alt="">
+                        <div class="itemTxtBox">
+                          <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                          <div class="newsDate">2019.06.05</div>
+                        </div>
+                      </div>
+                      <p class="itemDescribe">
+                        尤記得10多年以前，我們只能窺見素食的一點曙光，大膽的假設(期待)素食一定是未來的飲食潮流，果真經過這幾年努力的宣傳素食，食安問題頻傳，國人吹起養生之風，漸漸關注健康的議題，而根據美國最新MarketsandMarkets
+                        的一份研究報告指出，2020年以植物為主的肉類替代品(素食製品)消費市場將達50.17億美元！</p>
+                    </a>
+
+                    <div class="lastDiv flexBox">
+                      <a href="#" class="itemLink">
+                        <div class="itemImg">
+                          <img src="images/img-8.png" alt="">
+                          <div class="itemTxtBox">
+                            <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                            <div class="newsDate">2019.06.05</div>
+                          </div>
+                        </div>
+                        <p class="itemDescribe">
+                          尤記得10多年以前，我們只能窺見素食的一點曙光，大膽的假設(期待)素食一定是未來的飲食潮流，果真經過這幾年努力的宣傳素食，食安問題頻傳，國人吹起養生之風，漸漸關注健康的議題，而根據美國最新MarketsandMarkets
+                          的一份研究報告指出，2020年以植物為主的肉類替代品(素食製品)消費市場將達50.17億美元！</p>
+                      </a>
+                      <div class="itemSeeMore">
+                        <a href="#" class="itemSeeMoreBtn">看更多</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- foodBox -->
+          <div class="foodBox" style="display: none;">
+            <div class="container">
+              <div class="blockTlt">達人上菜</div>
+              <div class="tent">
+                <div>
+                  <div class="flexBox itlFxb">
+
+                    <!-- 圖片大小 300*300 正方形 -->
+                    <a href="#" class="itemLink">
+                      <div class="itemImg"><img src="images/img-9.png" alt=""></div>
+                      <!-- 標題 -->
+                      <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                      <!-- 日期 -->
+                      <div class="newsDate">2019.06.05</div>
+                    </a>
+                    <a href="#" class="itemLink">
+                      <div class="itemImg"><img src="images/img-7.png" alt=""></div>
+                      <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                      <div class="newsDate">2019.06.05</div>
+                    </a>
+
+                    <div class="lastDiv flexBox">
+                      <a href="#" class="itemLink">
+                        <div class="itemImg"><img src="images/img-8.png" alt=""></div>
+                        <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
+                        <div class="newsDate">2019.06.05</div>
+                      </a>
+                      <div class="itemSeeMore">
+                        <a href="#" class="itemSeeMoreBtn">看更多</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <!-- sec_03 -->
+        <section class="sec_03">
+          <div class="container">
+            <!-- fxb01 -->
+            <div class="flexBox fxb01">
+              <div class="newsBb news_lb">
+                <div class="blockTlt penpen">百年筆陣</div>
+                <!-- 百年筆陣  6則 / 字數限制 22字 -->
+                <ul class="penBox tentBlock">
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt videoNews">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">社論</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt videoNews">這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">看人間</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">論壇</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">筆陣</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">社論</div>
+                    </div>
+                  </li>
+                  <li class="flexBox">
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                    <div class="classfy">
+                      <div class="classTxt">看人間</div>
+                    </div>
+                  </li>
+
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+              <div class="newsBb news_rb adBox">
+                <!-- adBanner02 圖片大小 300*250 -->
+                <div class="adBannerBox">
+                  <div class="adBanner02 adBanner02_1">
+                    <img src="images/ad-2.png" alt="">
+                  </div>
+                  <div class="adBanner02 adBanner02_2">
+                    <img src="images/ad-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fxb02 -->
+            <div class="flexBox fxb02">
+              <div class="newsBb news_lb">
+                <div class="blockTlt">覺世菩提</div>
+                <!-- 圖片大小 440*200 -->
+                <div class="fxbImg"><img src="images/pic02.png" alt=""></div>
+                <!-- 覺世菩提  3則 / 字數限制 22字-->
+                <ul class="puTiBox tentBlock">
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+              <div class="newsBb news_rb">
+                <div class="blockTlt">人間善友</div>
+                <!-- 圖片大小 440*200 -->
+                <div class="fxbImg"><img src="images/pic02.png" alt=""></div>
+                <!-- 人間善友  3則 / 字數限制 22字-->
+                <ul class="goodFBox tentBlock">
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- fxb03 -->
+            <div class="flexBox fxb03">
+              <div class="newsBb news_lb">
+                <div class="blockTlt">國際兩岸</div>
+                <!-- 圖片大小 440*200 -->
+                <div class="fxbImg"><img src="images/pic02.png" alt=""></div>
+                <!-- 國際專題  3則 / 字數限制 22字-->
+                <ul class="nationBox tentBlock">
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+              <div class="newsBb news_rb">
+                <div class="blockTlt">創意生活</div>
+                <!-- 圖片大小 440*200 -->
+                <div class="fxbImg"><img src="images/pic02.png" alt=""></div>
+                <!-- 創意生活  3則 / 字數限制 22字-->
+                <ul class="lifeBox tentBlock">
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- fxb04 -->
+            <div class="flexBox fxb04">
+              <div class="newsBb news_lb">
+                <div class="blockTlt">心靈旅讀</div>
+                <!-- 圖片大小 440*200 -->
+                <div class="fxbImg"><img src="images/pic02.png" alt=""></div>
+                <!-- 國際專題  3則 / 字數限制 22字-->
+                <ul class="nationBox tentBlock">
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+              <div class="newsBb news_rb">
+                <div class="blockTlt">教育運動</div>
+                <!-- 圖片大小 440*200 -->
+                <div class="fxbImg"><img src="images/pic02.png" alt=""></div>
+                <!-- 創意生活  3則 / 字數限制 22字-->
+                <ul class="lifeBox tentBlock">
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">2槍纏訟6年換無罪 張景義：別讓警察不敢保護人民</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">影音／這樣也能划！你沒看過的彎道龍舟賽</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="linkTent">
+                      <a href="#" class="linkTentTlt">極端氣候來襲 雹雨狂打墨西哥</a>
+                      <div class="newsDate">2019.06.05</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="seeMore">
+                  <a href="#" class="seeMoreLink">看更多</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <div class="infoBox">
+        <div class="container flexBox">
+          <div class="about flexBox">
+            <div class="aboutTxt">
+              <div>關</div>
+              <div>於</div>
+              <div>我</div>
+              <div>們</div>
+            </div>
+            <p class="aboutP">
+              《人間福報》是一份多元化的報紙，不單只有報導佛教新聞，乃以推動祥和社會、淨化人心為職志，以關懷人類福祉、追求世界和平為宗旨，堅持新聞的準度與速度、廣度與深度，關懷弱勢族群與公益；強調內容溫馨、健康、益智、環保，不八卦、不加料、不阿諛，希冀藉由優質的內涵，體貼大眾身心靈的需要、關懷地球永續經營、延續宇宙無窮慧命，是一份承擔社會責任的報紙。自許成為「社會的一道光明」的《人間福報》任重而道遠，在秉持創辦人星雲大師「傳播人間善因善緣」的理念之際，更將堅持為社會注入清流，讓福報的發行為人間帶來祥和歡喜，具體實現「人間有福報，福報滿人間」的目標。
+            </p>
+          </div>
+          <div class="QRbox flexBox">
+            <div class="QRtxt">
+              <div>App</div>下<br class="footBR">載
+            </div>
+            <div class="QRimg">
+              <img src="images/qrcode.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="socialBox">
+        <div class="container flexBox">
+          <div class="socialIcons flexBox">
+            <a href="index.html" class="foot_logo"><img src="images/logo.png" alt="人間福報"></a>
+            <div class="connectBox">
+              <div class="flexBox">
+                <a href="#" target="_blank" class="mediaIcon fbIcon"></a>
+                <a href="#" target="_blank" class="mediaIcon ytIcon"></a>
+                <a href="#" target="_blank" class="mediaIcon igIcon">
+                  <img src="images/ig.svg" alt="">
+                </a>
+                <a href="#" target="_blank" class="mediaIcon lineIcon"></a>
+              </div>
+              <a href="mailto:newsmaster@merit-times.com.tw" class="bussinessEmail">newsmaster@merit-times.com.tw</a>
+            </div>
+          </div>
+          <div class="getEpaper subEpaperBox flexBox">
+            <input type="text" placeholder="請輸入電郵地址">
+            <button type="button">立即訂閱</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyRightBox">
+        <p>Copyright &copy; 2019 人間福報 www.merit-times.net <br class="copyBr">All Rights Reserved. </p>
+      </div>
+    </footer>
+    <!-- pc版 側欄選單 social media -->
+    <div class="socialMedia pc">
+      <a href="javascript:;" class="mediaLink">追蹤我們</a>
+      <a href="#" target="_blank" class="mediaSIcon fbIcon"></a>
+      <a href="#" target="_blank" class="mediaSIcon ytIcon"></a>
+      <a href="#" target="_blank" class="mediaSIcon igIcon">
+        <img src="images/ig.svg" alt="">
+      </a>
+      <a href="#" target="_blank" class="mediaSIcon lineIcon"></a>
+      <a href="#" target="_blank" class="mediaLink">讀報教育</a>
+      <a href="#" target="_blank" class="mediaLink">海外版</a>
+    </div>
+  </div>
+
+  <!-- <script type="text/javascript" src="js.lib/modernizr-custom.js"></script> -->
+  <script type="text/javascript" src="js.lib/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+  <script type="text/javascript" src="js.lib/slick.min.js"></script>
+  <script type="text/javascript" src="js.lib/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="js/layout.js"></script>
+
+  <!-- 首頁only -->
+  <script type="text/javascript" src="js/index.js"></script>
+
+
+</body>
+
+</html>
