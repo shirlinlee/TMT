@@ -23,9 +23,8 @@
   text-overflow: ellipsis;
 }
 
-
 .writerInfo {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
 }
 
 article h1 {
@@ -57,9 +56,8 @@ span.posTime {
   font-style: italic;
 }
 
-
 .mediaShareBox {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   width: 100%;
   border-top: 1px solid #a3a3a3;
   border-bottom: 1px solid #a3a3a3;
@@ -150,7 +148,7 @@ span.posTime {
   display: block;
   width: 300px;
   border-radius: 6px;
-  background-color: #F1F3F4;
+  background-color: #f1f3f4;
 }
 
 .watching {
@@ -182,19 +180,18 @@ span.posTime {
   background-size: 18px auto;
 }
 
-
 /* 字級大小 */
-.toolBox{
+.toolBox {
   justify-content: space-between;
 }
-.smbTxtBox{
+.smbTxtBox {
   justify-content: flex-end;
   align-items: center;
   font-size: 0.3rem;
   color: #595b5a;
   font-weight: normal;
 }
-.smbTxt{
+.smbTxt {
   color: #f25d27;
   line-height: 0.72rem;
   width: 0.72rem;
@@ -207,18 +204,18 @@ span.posTime {
   z-index: 99;
 }
 .smbTxt.active,
-.smbTxt:hover{
+.smbTxt:hover {
   background-color: #f25d27;
   color: #ffffff;
 }
-.smbTxtB{
-  font-size: 0.4rem!important;
+.smbTxtB {
+  font-size: 0.4rem !important;
 }
-.smbTxtM{
-  font-size: 0.32rem!important;
+.smbTxtM {
+  font-size: 0.32rem !important;
 }
-.smbTxtS{
-  font-size: 0.26rem!important;
+.smbTxtS {
+  font-size: 0.26rem !important;
 }
 
 /** 文字編輯器 **************************/
@@ -265,7 +262,6 @@ tr {
   min-height: 3em;
   letter-spacing: normal;
 }
-
 
 /** 上下則 ************************************/
 .npBtnBox {
@@ -324,12 +320,11 @@ tr {
   max-width: 300px;
 }
 
-.googleAdBannerBox>div {
+.googleAdBannerBox > div {
   margin-top: 0.5rem;
   cursor: pointer;
   /* width: 300px; */
 }
-
 
 /** 相關文章區 ************************************/
 .relatedATBox {
@@ -343,7 +338,7 @@ tr {
 }
 
 .relaTlt {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.48rem;
   font-weight: bold;
   -webkit-writing-mode: vertical-lr;
@@ -379,7 +374,7 @@ tr {
 }
 
 .relaImg:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -396,6 +391,8 @@ tr {
 .relaImg img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  background-size: cover;
+  background-position: center;
 }
 
 .slickRelatd a:hover .relaImg:before {
@@ -445,10 +442,7 @@ tr {
 .rela-prev {
   right: 0;
   padding-right: 0.1rem;
-
 }
-
-
 
 @media screen and (max-width: 1080px) {
   .relatedATBox .container {
@@ -479,7 +473,6 @@ tr {
 
   .rela-prev {
     right: calc(49% + 3px);
-
   }
 }
 
@@ -513,26 +506,26 @@ tr {
   }
 
   /* 字級 */
-  .toolBox{
+  .toolBox {
     display: block;
   }
-  .smbTxtBox{
+  .smbTxtBox {
     justify-content: flex-start;
     margin-top: 0.36rem;
   }
-  .smbTxt{
+  .smbTxt {
     color: #f25d27;
     line-height: 0.72rem;
     width: 0.72rem;
   }
-  .smbTxtB{
-    font-size: 0.4rem!important;
+  .smbTxtB {
+    font-size: 0.4rem !important;
   }
-  .smbTxtM{
-    font-size: 0.32rem!important;
+  .smbTxtM {
+    font-size: 0.32rem !important;
   }
-  .smbTxtS{
-    font-size: 0.26rem!important;
+  .smbTxtS {
+    font-size: 0.26rem !important;
   }
 
   /** 文字編輯器 **************************/
@@ -580,7 +573,6 @@ tr {
   .sec_02 {
     margin-top: 0;
   }
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -613,7 +605,6 @@ tr {
     margin-left: 0;
   }
 }
-
 
 @media screen and (max-width: 540px) {
   .googleAdBannerBox {

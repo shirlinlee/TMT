@@ -16,7 +16,7 @@ a:hover {
 }
 
 .kv:after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -24,13 +24,22 @@ a:hover {
   z-index: 0;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.4));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(15%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0.4))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0.4)
+  );
 }
 
-
 .kv h1 {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.6rem;
   font-weight: bold;
   color: #ffffff;
@@ -46,7 +55,7 @@ a:hover {
 }
 
 .kv h1:before {
-  content: '';
+  content: "";
   display: block;
   width: 0.8rem;
   height: 1px;
@@ -83,7 +92,7 @@ a:hover {
 
 .newsListBt .flexBox li {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .newsListBt .flexBox li:first-child {
@@ -116,7 +125,6 @@ a:hover {
   color: #f25d27;
 }
 
-
 /** crumb ******************************************************/
 .crumb .container {
   max-width: 1100px;
@@ -140,7 +148,6 @@ a:hover {
   width: 1.6em;
   text-align: center;
 }
-
 
 /** article ***************************************************/
 
@@ -175,7 +182,7 @@ a:hover {
 }
 
 .newsDate {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 13px;
   font-weight: 200;
   line-height: 1;
@@ -186,14 +193,14 @@ a:hover {
   font-style: italic;
 }
 
-.news>.flexBox {
+.news > .flexBox {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
 
-.news>.newsDate:before {
-  content: '';
+.news > .newsDate:before {
+  content: "";
   display: block;
   width: 114px;
   height: 1px;
@@ -253,15 +260,13 @@ a:hover {
   overflow: hidden;
 }
 
-.news>.flexBox:hover img.theNewsImg {
-  -webkit-transform: translate(-50%, -50%) scale(1.05);
-          transform: translate(-50%, -50%) scale(1.05);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.news > .flexBox:hover img.theNewsImg {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .newsImg:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -275,20 +280,23 @@ a:hover {
   opacity: 0;
 }
 
-.news>.flexBox:hover .newsImg:before {
+.news > .flexBox:hover .newsImg:before {
   opacity: 1;
 }
 
 img.theNewsImg {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: auto;
-  height: 100%;
-  -webkit-transition: 0s;
-  transition: 0s;
+  height: 100%; */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 /** pageNumBox *************************/
@@ -378,7 +386,7 @@ a.page.active {
 } */
 
 .TltBlock {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.3rem;
   line-height: 1;
   letter-spacing: 0.075em;
@@ -389,7 +397,7 @@ a.page.active {
 }
 
 .TltBlock:before {
-  content: '';
+  content: "";
   display: block;
   width: calc(100% - 5.7em);
   height: 2px;
@@ -420,7 +428,6 @@ a.page.active {
 }
 
 .hotNewsList li:last-child {
-
   border-bottom: none;
 }
 
@@ -459,7 +466,6 @@ a.page.active {
 .weatherBox {
   margin-top: 0.2rem;
 }
-
 
 .googleAD_kv {
   /* max-width: 1020px; */
@@ -518,9 +524,7 @@ a.page.active {
   margin-right: 0;
 }
 
-
 @media screen and (max-width: 768px) {
-
   /** kv *******************************************/
   .kv {
     margin-top: 1.8rem;
@@ -594,7 +598,6 @@ a.page.active {
 }
 
 @media screen and (max-width: 540px) {
-
   /** kv *******************************************/
   /* .newsListBt .flexBox {
     width: 728px;
@@ -683,7 +686,6 @@ a.page.active {
   .sec_02 {
     margin-top: 0;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -703,9 +705,9 @@ a.page.active {
     padding: 0.52rem 0 1.04rem 0;
   }
 
-  .sec_02>div,
-  .sec_02>div .mCSB_container,
-  .sec_02>div .mCustomScrollBox {
+  .sec_02 > div,
+  .sec_02 > div .mCSB_container,
+  .sec_02 > div .mCustomScrollBox {
     width: 100vw !important;
   }
 

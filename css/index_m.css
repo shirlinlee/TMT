@@ -5,7 +5,6 @@
 }
 
 @media screen and (min-width: 1101px) {
-
   .sec_02 .mCSB_container {
     width: 1040px !important;
   }
@@ -80,7 +79,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   /** KV **********************/
   .kv {
     padding-top: 1.8rem;
@@ -89,7 +87,6 @@
   .slickBtn {
     bottom: 0.6rem;
   }
-
 
   /*****************************/
   .slickTxt {
@@ -132,12 +129,11 @@
   /* .googleAd01OpenBtnBox .container{
     position: static;
   } */
-  .googleAd01OpenBtn{
+  .googleAd01OpenBtn {
     bottom: 0.3;
     right: 20px;
   }
 
-  
   /** article ***************************************************/
 
   /* sec_01 */
@@ -147,7 +143,7 @@
 
   .sec_01 .container {
     display: block;
-    padding-bottom: 0.8rem
+    padding-bottom: 0.8rem;
   }
 
   .l_b {
@@ -155,7 +151,7 @@
     max-width: 708px;
     margin: auto;
   }
-  
+
   .sec03_5 .news_lb,
   .r_b {
     width: auto;
@@ -166,8 +162,8 @@
     box-sizing: border-box;
     padding-left: 0.8rem;
   }
-  .sec03_5 .news_lb{
-    width: 100%!important;
+  .sec03_5 .news_lb {
+    width: 100% !important;
     padding-top: 0;
   }
 
@@ -193,7 +189,7 @@
     font-weight: 200;
   }
 
-  .newsLisBox~.seeMore {
+  .newsLisBox ~ .seeMore {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -221,15 +217,15 @@
   }
 
   /** masterBox ************************************/
-  .r_b>div:nth-child(1) {
+  .r_b > div:nth-child(1) {
     float: left;
   }
 
-  .r_b>div:nth-child(2) {
+  .r_b > div:nth-child(2) {
     float: right;
   }
 
-  .r_b>* {
+  .r_b > * {
     width: 49%;
   }
 
@@ -243,7 +239,7 @@
   }
 
   .masterBox .blockTlt {
-    right: calc(100% + 0.3rem)
+    right: calc(100% + 0.3rem);
   }
 
   .masterNewsList li:first-child {
@@ -268,13 +264,11 @@
     bottom: 0.7rem;
   }
 
-
   /** subEpaperBox ******************************/
   .subEpaperBox {
     margin-left: 0;
     padding-top: 0.3rem;
   }
-
 
   /** adBanner **********************************/
   .adBanner {
@@ -307,7 +301,6 @@
     padding-left: 40px;
   }
 
-
   /** sec_03 **********************************************/
   .sec_03 .container {
     padding-bottom: 1.26rem;
@@ -324,7 +317,7 @@
     left: -7px;
   }
 
-  .tentBlock>li {
+  .tentBlock > li {
     padding-bottom: 0.2rem;
     padding-top: 0.2rem;
     position: relative;
@@ -334,7 +327,7 @@
     padding-right: 0;
   }
 
-  .penBox .linkTent>a {
+  .penBox .linkTent > a {
     min-height: 2em;
   }
 
@@ -371,12 +364,9 @@
   .sec03_5 {
     background-color: #ffffff;
   }
-
-
 }
 
 @media screen and (max-width: 480px) {
-
   /** KV **********************/
   .kv {
     padding-top: 1.8rem;
@@ -391,7 +381,6 @@
   .slickBtn {
     bottom: 0;
   }
-
 
   /*****************************/
   .slickTxt {
@@ -420,7 +409,7 @@
 
   /* sec_01 */
   .sec_01 .container {
-    padding-bottom: 0.5rem
+    padding-bottom: 0.5rem;
   }
 
   .r_b {
@@ -430,8 +419,18 @@
 
   /** sec01Slick ***********************************/
   .secSlickImg::before {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(5%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1))
+    );
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 5%,
+      rgba(0, 0, 0, 1)
+    );
   }
 
   .newsTlt h3 {
@@ -452,21 +451,21 @@
     line-height: 1.5;
   }
 
-  .newsLisBox~.seeMore {
+  .newsLisBox ~ .seeMore {
     padding-top: 0.3rem;
     padding-bottom: 0.12rem;
   }
 
   /** masterBox ************************************/
-  .r_b>div:nth-child(1) {
+  .r_b > div:nth-child(1) {
     float: none;
   }
 
-  .r_b>div:nth-child(2) {
+  .r_b > div:nth-child(2) {
     float: none;
   }
 
-  .r_b>* {
+  .r_b > * {
     width: auto;
   }
 
@@ -503,14 +502,23 @@
   }
 
   .ePaperImg:before {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 1));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(15%, rgba(255, 255, 255, 0)),
+      to(rgba(255, 255, 255, 1))
+    );
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 15%,
+      rgba(255, 255, 255, 1)
+    );
   }
 
   .ePaperBox .seeMore {
     bottom: 0.5rem;
   }
-
 
   /** subEpaperBox ******************************/
   .subEpaperBox {
@@ -519,7 +527,6 @@
     padding-bottom: 0.6rem;
   }
 
-
   /** adBanner **********************************/
   .adBanner {
     margin: auto;
@@ -527,7 +534,7 @@
   }
 
   .adBanner:before {
-    content: '';
+    content: "";
     display: block;
     width: 150vw;
     height: 100%;
@@ -603,7 +610,7 @@
     padding-bottom: 0.74rem;
   }
 
-  .sec_03 .container>.flexBox {
+  .sec_03 .container > .flexBox {
     display: block;
   }
 
@@ -612,7 +619,7 @@
     top: 6.2em;
   }
 
-  .penBox .linkTent>a {
+  .penBox .linkTent > a {
     min-height: 0;
   }
 
@@ -620,7 +627,7 @@
     width: auto;
   }
 
-  .tentBlock>li.onM {
+  .tentBlock > li.onM {
     display: none;
   }
 
@@ -657,10 +664,10 @@
   }
 
   /*****************************************/
-  .sec03_5{
+  .sec03_5 {
     background-color: #eff0ef;
   }
-  .sec03_5 .blockTlt{
+  .sec03_5 .blockTlt {
     left: -7px;
   }
 }

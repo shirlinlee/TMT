@@ -511,6 +511,11 @@ a.newsListTlt:hover {
   max-width: 300px;
 }
 
+.masterNews img {
+  background-size: cover;
+  background-position: center;
+}
+
 .masterNewsList li {
   border-bottom: 1px solid #b6b6b6;
   padding-top: 0.18rem;
@@ -1049,6 +1054,11 @@ a.itemLink:hover .itemDescribe {
   max-width: 440px;
   width: 100%;
   /* margin: auto; */
+}
+
+.fxbImg img {
+  background-size: cover;
+  background-position: center;
 }
 
 .fxb01 {
