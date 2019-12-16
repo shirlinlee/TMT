@@ -391,8 +391,10 @@ tr {
 .relaImg img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
+  background-color: #eff0ef;
 }
 
 .slickRelatd a:hover .relaImg:before {

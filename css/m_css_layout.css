@@ -416,6 +416,7 @@
   .socialMedia.m_mode a.mediaLink {
     line-height: 1;
     height: 1em;
+    z-index: 1;
   }
 
   /* footer ***********************************************/
