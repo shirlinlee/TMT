@@ -23,6 +23,19 @@
   text-overflow: ellipsis;
 }
 
+.articleBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.articleBox div {
+  position: relative;
+  margin-bottom: 1em;
+}
+
 .writerInfo {
   font-family: "Noto Serif TC", serif;
 }
@@ -332,6 +345,7 @@ tr {
   padding-bottom: 1rem;
 }
 
+
 .relatedATBox .container {
   position: relative;
   margin-bottom: 0.9rem;
@@ -543,6 +557,11 @@ tr {
   .articleBox figure {
     line-height: 1.4;
     min-height: 2.8em;
+  }
+
+
+  .articleBox div {
+    position: relative;
   }
 
   /** 相關文章區 ************************************/

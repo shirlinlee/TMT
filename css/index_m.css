@@ -376,6 +376,11 @@
     width: 500px;
     min-width: 0;
     padding-bottom: 2.4rem;
+    background-color: #000;
+  }
+
+  .slickTent::before {
+    top: -118px;
   }
 
   .slickBtn {
@@ -548,8 +553,22 @@
   /* */
   /* */
   .kv02Img {
-    min-width: 0;
-    width: 880px;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    padding-bottom: 2.4rem;
+    background-color: #000;
+  }
+
+  .kv02Img img{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .kv02Img::before{
+    top: -118px;
   }
 
   /*  */
