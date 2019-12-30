@@ -560,15 +560,13 @@
     background-color: #000;
   }
 
-  .kv02Img img{
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+  .kv02Img::before {
+    top: -118px;
   }
 
-  .kv02Img::before{
-    top: -118px;
+  .kv02Img img {
+    width: 500px;
+    margin: 0 calc(50% - 250px);
   }
 
   /*  */
@@ -580,7 +578,7 @@
 
   /** friendBox ************************************/
   .friendBox .blockTlt {
-    top: -3.5rem;
+    top: -2rem;
   }
 
   .fndHot {
