@@ -1068,8 +1068,10 @@ a.itemLink:hover .itemDescribe {
 }
 
 .fxbImg img {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eff0ef;
 }
 
 .fxb01 {
