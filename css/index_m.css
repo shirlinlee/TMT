@@ -376,11 +376,13 @@
     width: 500px;
     min-width: 0;
     padding-bottom: 2.4rem;
-    background-color: #000;
+    background-color: #fff;
   }
 
   .slickTent::before {
     top: -118px;
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)) );
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 1) );
   }
 
   .slickBtn {
@@ -389,7 +391,7 @@
 
   /*****************************/
   .slickTxt {
-    bottom: 1.2rem;
+    bottom: 0.6rem;
   }
 
   .slickTxt h2 {
@@ -398,6 +400,7 @@
     text-align: left;
     line-height: 1.38;
     margin-bottom: 0.2rem;
+    color: #000;
   }
 
   .slickTxt p {
