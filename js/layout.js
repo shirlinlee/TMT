@@ -224,7 +224,7 @@ $(function() {
     .resize();
 
   //m版 search bar
-  $(".searchClick").on("click", function() {
+  $(".searchClick, .search_icon").on("click", function() {
     if (!$(this).hasClass("clicked")) {
       $(this)
         .parent(".searchBox")
@@ -236,6 +236,13 @@ $(function() {
         .removeClass("open");
       $(this).removeClass("clicked");
     }
+  });
+
+  $(".close.mb").on("click", function() {
+    $(this)
+      .parent(".searchBox")
+      .removeClass("open");
+    $(".searchClick, .search_icon").removeClass("clicked");
   });
 
   // goTopBtn
