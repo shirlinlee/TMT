@@ -300,6 +300,31 @@ img.theNewsImg {
   background-position: center;
 }
 
+.secBtn {
+  position: absolute;
+  top: 0%;
+  z-index: 99;
+  width: 0.26rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+  padding: 0.2rem;
+}
+
+.secBtn:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sec-prev {
+  left: 0;
+}
+
+.sec-next {
+  right: 0;
+}
+
 /** pageNumBox *************************/
 .pageNumBox {
   width: 100%;
@@ -596,6 +621,30 @@ a.page.active {
   .sec_02 {
     margin-top: 1rem;
   }
+}
+
+@media (max-width: 720px) {
+  ul#mbNav {
+    height: 50px;
+    padding: 0;
+    margin: 0 auto 30px;
+  }
+  .newsListBt .flexBox li:first-child {
+    padding-left: 0;
+  }
+  .newsListBt a {
+    text-align: center;
+    line-height: 50px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .newsListBt a.active {
+    background-color: transparent;
+    border: none;
+  }
+  /* .slick-slide {
+    margin-top: 20px;
+  } */
 }
 
 @media screen and (max-width: 540px) {
