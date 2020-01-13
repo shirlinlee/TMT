@@ -31,22 +31,36 @@ function kvTxt() {
   }
 }
 
-let isMb = false;
+let sliderNavInit = false;
+let ww = window.innerWidth;
 
 $(window).ready(function() {
   initSlider();
 });
 
+$(window).scroll(function(event) {
+  var scroll = Number($(window).scrollTop());
+  var WH = $(window).innerHeight();
+  var scrollBottom = scroll + $(window).height();
+  var bodyH = $("body").height();
+  console.log(bodyH, scrollBottom);
+  if (scrollBottom == 0) {
+    console.log("快到底");
+  } else {
+    console.log("還有空位");
+  }
+});
+
 $(window)
   .resize(function() {
     kvTxt();
-    const ww = window.innerWidth;
-    if (ww <= 720 && isMb == false) {
+    ww = window.innerWidth;
+    if (ww <= 720 && sliderNavInit == false) {
       initSlider();
-      isMb = true;
+      sliderNavInit = true;
     } else {
       $("#mbNav").slick("unslick");
-      isMb = false;
+      sliderNavInit = false;
     }
   })
   .resize();
