@@ -34,59 +34,51 @@ function kvTxt() {
 let sliderNavInit = false;
 let ww = window.innerWidth;
 
-$(window).ready(function() {
+$(function(){
   initSlider();
-});
 
-$(window).scroll(function(event) {
-  var scroll = Number($(window).scrollTop());
-  var WH = $(window).innerHeight();
-  var scrollBottom = scroll + $(window).height();
-  var bodyH = $("body").height();
-  console.log(bodyH, scrollBottom);
-  if (scrollBottom == 0) {
-    console.log("快到底");
-  } else {
-    console.log("還有空位");
-  }
-});
-
-$(window)
-  .resize(function() {
-    kvTxt();
-    ww = window.innerWidth;
-    if (ww <= 720 && sliderNavInit == false) {
+  $(window)
+    .resize(function() {
+      kvTxt();
       initSlider();
-      sliderNavInit = true;
-    } else {
-      $("#mbNav").slick("unslick");
-      sliderNavInit = false;
-    }
-  })
-  .resize();
+    })
+    .resize();
+    //
+    $(".googleAD_kv > div:not(.gAd_KVCloseBtn)").mCustomScrollbar({
+      axis: "x",
+      theme: "minimal-dark"
+    });
+    $(".newsListBt > div").mCustomScrollbar({
+      axis: "x",
+      theme: "minimal-dark"
+    });
+    $(".sec_02 > div").mCustomScrollbar({
+      axis: "x",
+      theme: "minimal-dark"
+    });
+});
 
 function initSlider() {
-  $("#mbNav").slick({
-    dots: false,
-    arrows: true,
-    speed: 500,
-    prevArrow:
-      '<div class="sec-prev secBtn"><img src="images/arrow_2.png" alt=""></div>',
-    nextArrow:
-      '<div class="sec-next secBtn"><img src="images/arrow.png" alt=""></div>'
-  });
+  ww = window.innerWidth;
+  if (ww <= 720) {
+    if(!sliderNavInit) {
+      $("#mbNav").slick({
+        dots: false,
+        arrows: true,
+        speed: 500,
+        prevArrow:
+          '<div class="sec-prev secBtn"><img src="images/arrow_2.png" alt=""></div>',
+        nextArrow:
+          '<div class="sec-next secBtn"><img src="images/arrow.png" alt=""></div>'
+      });
+      sliderNavInit = true;
+    }
+  } else {
+    if(sliderNavInit) {
+      $("#mbNav").slick("unslick");
+      sliderNavInit = false;
+    } 
+  }
 }
 
-//
-$(".googleAD_kv > div:not(.gAd_KVCloseBtn)").mCustomScrollbar({
-  axis: "x",
-  theme: "minimal-dark"
-});
-$(".newsListBt > div").mCustomScrollbar({
-  axis: "x",
-  theme: "minimal-dark"
-});
-$(".sec_02 > div").mCustomScrollbar({
-  axis: "x",
-  theme: "minimal-dark"
-});
+

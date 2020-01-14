@@ -50,5 +50,35 @@ $(function(){
       txtGrade = 'smbTxtS'
     }
     $('.articleBox p, .articleBox figure').addClass(txtGrade)
+  });
+
+  $(window).on('load', function(){
+    detectPinInit()
   })
+
+  var pinInit = false;
+
+  $(window).on('resize', function(){
+    detectPinInit()
+  });
+
+  function detectPinInit() {
+    var ww = window.innerWidth > 540;
+    var article_h = $('#article_content').height();
+    var right_h = $('#right_content').height();
+    console.log(ww, article_h, right_h);
+    if( right_h - article_h >= 100 && ww && !pinInit) {
+      pinInit = true;
+      new $.Zebra_Pin($('.l_b'), {
+        contain: true,
+        top_spacing: 100,
+        z_index: 10
+      });
+    }
+    if(pinInit && !ww ){
+      location.reload();
+    }
+  } 
+  
 })
+
