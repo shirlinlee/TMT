@@ -77,9 +77,9 @@ a:hover {
   min-width: 768px;
 } */
 .newsListBt .flexBox {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   /* width: 768px; */
-  /* width: 100%; */
+  width: 100%;
   margin: auto;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -96,18 +96,19 @@ a:hover {
 }
 
 .newsListBt .flexBox li:first-child {
-  padding-left: 0.2rem;
+  padding-left:20px;
 }
 
 .newsListBt .flexBox li:last-child {
-  padding-right: 0.2rem;
+  padding-right:20px;
 }
+
 
 .newsListBt a {
   color: #ffffff;
   font-size: 0.3rem;
   line-height: 0.5rem;
-  padding: 0 0.6em;
+  padding: 0 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid transparent;
@@ -121,9 +122,6 @@ a:hover {
   border-color: #d7000f;
 }
 
-.newsListBt a:hover {
-  color: #f25d27;
-}
 
 /** crumb ******************************************************/
 .crumb .container {
@@ -550,6 +548,14 @@ a.page.active {
   margin-right: 0;
 }
 
+@media screen and (min-width: 769px) {
+.newsListBt a:hover {
+  color: #f25d27;
+}
+}
+
+
+
 @media screen and (max-width: 768px) {
   /** kv *******************************************/
   .kv {
@@ -623,12 +629,12 @@ a.page.active {
   }
 }
 
-@media (max-width: 720px) {
+
+/* @media (max-width: 720px) {
   ul#mbNav {
     height: 50px;
     padding: 0;
     margin: 0 auto 30px;
-    width: 90%;
   }
   .newsListBt .flexBox li:first-child {
     padding-left: 0;
@@ -643,10 +649,10 @@ a.page.active {
     background-color: transparent;
     border: none;
   }
-  /* .slick-slide {
+  .slick-slide {
     margin-top: 20px;
-  } */
-}
+  }
+} */
 
 @media screen and (max-width: 540px) {
   /** kv *******************************************/

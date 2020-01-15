@@ -35,12 +35,12 @@ let sliderNavInit = false;
 let ww = window.innerWidth;
 
 $(function(){
-  initSlider();
+  // initSlider();
 
   $(window)
     .resize(function() {
       kvTxt();
-      initSlider();
+      // initSlider();
     })
     .resize();
     //
@@ -63,15 +63,24 @@ function initSlider() {
   if (ww <= 720) {
     if(!sliderNavInit) {
       $("#mbNav").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        // slidesToShow: 3,
+        // slidesToScroll: 1,
         dots: false,
         arrows: true,
         speed: 500,
+        variableWidth: true,
+        infinite: false,
         prevArrow:
           '<div class="sec-prev secBtn"><img src="images/arrow_2.png" alt=""></div>',
         nextArrow:
-          '<div class="sec-next secBtn"><img src="images/arrow.png" alt=""></div>'
+          '<div class="sec-next secBtn"><img src="images/arrow.png" alt=""></div>',
+        responsive: [
+          {
+            breakpoint: 374,
+            settings: {
+              // slidesToShow: 2,
+            }
+          }]
       });
       sliderNavInit = true;
     }
