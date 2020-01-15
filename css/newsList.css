@@ -318,11 +318,11 @@ img.theNewsImg {
 }
 
 .sec-prev {
-  left: 0;
+  left: -5%;
 }
 
 .sec-next {
-  right: 0;
+  right: -5%;
 }
 
 /** pageNumBox *************************/
@@ -628,6 +628,7 @@ a.page.active {
     height: 50px;
     padding: 0;
     margin: 0 auto 30px;
+    width: 90%;
   }
   .newsListBt .flexBox li:first-child {
     padding-left: 0;

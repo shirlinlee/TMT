@@ -230,6 +230,7 @@ $(function() {
         .parent(".searchBox")
         .addClass("open");
       $(this).addClass("clicked");
+      $('body').find('.close').addClass("show");
     } else {
       $(this)
         .parent(".searchBox")
@@ -238,11 +239,12 @@ $(function() {
     }
   });
 
-  $(".close.mb").on("click", function() {
+  $(".close").on("click", function() {
     $(this)
       .parent(".searchBox")
       .removeClass("open");
     $(".searchClick, .search_icon").removeClass("clicked");
+    $('body').find('.close').removeClass("show");
   });
 
   // goTopBtn

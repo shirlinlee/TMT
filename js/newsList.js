@@ -63,6 +63,8 @@ function initSlider() {
   if (ww <= 720) {
     if(!sliderNavInit) {
       $("#mbNav").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
         dots: false,
         arrows: true,
         speed: 500,

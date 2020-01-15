@@ -18,7 +18,7 @@ a:hover {
   display: none;
 } */
 .ADImg {
-  width: 728px;
+  max-width: 728px;
   margin: auto;
   cursor: pointer;
 }
@@ -152,7 +152,7 @@ a:hover {
 .sec_01 {
   margin-top: 0.7rem;
   position: relative;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 
 .sec_01 .container {
@@ -160,7 +160,8 @@ a:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 0.76rem;
+  padding-bottom: 200px;
+  position: relative;
 }
 
 .r_b {

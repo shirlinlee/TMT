@@ -275,7 +275,7 @@
     display: none;
   }
 
-  .close.mb {
+  .close {
     width: 40px;
     height: 40px;
     text-align: center;
@@ -283,10 +283,18 @@
     margin-top: 8px;
     margin-left: 10px;
     transform: rotate(45deg);
+    position: fixed;
+    top: 2px;
+    right: 10px;
+    display: none;
   }
 
-  .close.mb:before,
-  .close.mb:after {
+  .close.show {
+    display: block;
+  }
+
+  .close:before,
+  .close:after {
     content: "";
     display: block;
     width: 100%;
@@ -294,14 +302,14 @@
     background-color: #ccc;
   }
 
-  .close.mb:before {
+  .close:before {
     width: 34px;
     height: 2px;
     position: absolute;
     top: 16px;
   }
 
-  .close.mb:after {
+  .close:after {
     height: 34px;
     width: 2px;
     margin-left: 16px;
