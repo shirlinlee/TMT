@@ -236,9 +236,17 @@
   /* search bar */
   .searchBox {
     position: absolute;
-    width: 0.46rem;
-    right: 29px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    right: 0;
+    top: 55px;
     border-bottom: none;
+    background-color: #fff;
+    padding: 0 20px;
+    line-height: 60px;
+    overflow: hidden;
+    height: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -251,14 +259,74 @@
     cursor: pointer;
   }
 
+  .searchBox button {
+    margin-top: 10px;
+  }
+  .searchBox input {
+    margin-top: 8px;
+    height: 37px;
+    border-bottom: 1px solid #ccc;
+    margin-right: 20px;
+    background: none;
+    padding-left: 0;
+  }
+
   .open .searchClick {
     display: none;
   }
 
-  .searchBox.open {
-    width: calc(50% - 2rem);
+  .close {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    position: fixed;
+    top: 2px;
     right: 10px;
-    border-bottom: 1px solid #b6b6b6;
+    display: none;
+  }
+
+  .close.show {
+    display: block;
+  }
+
+  .close:before,
+  .close:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+  }
+
+  .close:before {
+    width: 34px;
+    height: 2px;
+    position: absolute;
+    top: 16px;
+  }
+
+  .close:after {
+    height: 34px;
+    width: 2px;
+    margin-left: 16px;
+  }
+
+  .searchBox.open {
+    height: 60px;
+    width: 100%;
+    right: 0;
+  }
+
+  .search_icon {
+    display: block;
+  }
+
+  .search_icon.clicked {
+    display: none;
   }
 
   /* 選單列 */
@@ -655,16 +723,10 @@
 
   /* search bar */
   .searchBox {
-    right: 15px;
-  }
-
-  .searchBox.open {
-    width: calc(50% - 1.6rem);
-    right: 5px;
   }
 
   .searchBox button {
-    width: 2.8em;
+    width: 5em;
     font-size: 0.24rem;
   }
 
@@ -672,7 +734,8 @@
     width: calc(100% - 34px);
     padding-left: 23px;
     padding-right: 1em;
-    background-size: 15px auto;
+    background: none;
+    padding-left: 0;
   }
 
   /** socialMedia.m_mode ************************************/

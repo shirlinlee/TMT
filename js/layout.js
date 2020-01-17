@@ -224,18 +224,27 @@ $(function() {
     .resize();
 
   //m版 search bar
-  $(".searchClick").on("click", function() {
+  $(".searchClick, .search_icon").on("click", function() {
     if (!$(this).hasClass("clicked")) {
       $(this)
         .parent(".searchBox")
         .addClass("open");
       $(this).addClass("clicked");
+      $('body').find('.close').addClass("show");
     } else {
       $(this)
         .parent(".searchBox")
         .removeClass("open");
       $(this).removeClass("clicked");
     }
+  });
+
+  $(".close").on("click", function() {
+    $(this)
+      .parent(".searchBox")
+      .removeClass("open");
+    $(".searchClick, .search_icon").removeClass("clicked");
+    $('body').find('.close').removeClass("show");
   });
 
   // goTopBtn

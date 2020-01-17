@@ -77,7 +77,11 @@
             <input type="text" placeholder="搜尋什麼...">
             <button type="button">搜尋</button>
             <div class="searchClick"></div>
+            <div class="close mb"></div>
+            <img src="images/search.svg" alt="" class="search_icon mb">
           </div>
+          
+
         </div>
         <div class="nowDate">
           <span class="Westdate">2019年6月4日</span>‧
@@ -364,8 +368,8 @@
 
         <!-- section01 -->
         <section class="sec_01">
-          <div class="container flexBox">
-            <div class="l_b">
+          <div class="container flexBox" style="position: relative">
+            <div class="l_b" id="article_content" style="height: fit-content;">
 
               <div class="flexBox toolBox">
                 <!-- fb like && watch counting-->
@@ -392,31 +396,7 @@
               <div class="articleBox">
                 <p>數位時代與生活關係密切，手機更成為人們看資訊看世界的重要工具，正在看文字的你可能也是這樣的族群。</p>
                 <p>根據英國衛報報導，英國通訊管理局（Ofcom）指出，現在英國年輕人幾乎不看電視新聞，且近一半的英國人選擇從社群媒體獲取新聞。</p>
-                <figcaption>
-                  <img src="images/img-112.jpg" />
-                  <figure>根據英國衛報報導，在數位化時代，現在英國年輕人幾乎不看電視新聞。圖／unsplash</figure>
-                </figcaption>
-                <p>英國通訊管理局的年度消費報告發現，65歲及以上族群平均每天收看電視新聞的時間是33分鐘，而16～24歲的觀眾平均收看時間僅為2分鐘。</p>
-                <p>年輕觀眾不再收看電視新聞，主要是因為他們愈來愈少接觸傳統直播平台。他們以前會在上面觀看熱門連續劇，並在晚間時段看新聞，但現在年輕人都轉往數位匯流服務平台追劇。</p>
-                <p>
-                  英國政黨長期以來認為英國廣播公司（BBC）晚間10時新聞是他們向大眾傳達訊息的最佳平台。現在年輕人最愛的Netflix等都沒有新聞播報，這可能會對英國政治產生重大影響，因為不同的輸出平台會改變他們頒布政策的呈現方式。
-                </p>
-                <p>儘管目前電視新聞仍是英國大眾了解時事的主要方式，但很大一部分原因是因為老年觀眾族群仍然熱衷於傳統媒體平台。</p>
-                <p>
-                  英國通訊管理局的研究還顯示，人們愈來愈熱衷於有關線上的新聞討論。該項研究說：「有證據指出英國成年人更積極地透過社群媒體接收新聞。例如，許多人在臉書或推特上看到好友分享的熱門新聞或新聞故事文章時，較往年更願意發表評論。」
-                </p>
-                <div id="Panel_video">
-                  <img src="images/videoBG.png" alt="">
-                  <iframe src="https://www.youtube.com/embed/goNbmll535I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>
-                <figcaption>
-                  <img src="images/img-222.jpg" />
-                  <figure>研究顯示，人們愈來愈熱衷於有關線上的新聞討論，證據還指出英國成年人更積極地透過社群媒體接收新聞。圖／unsplash</figure>
-                </figcaption>
-                <p>
-                  根據最新的一項調查顯示，英國最受歡迎的新聞平台仍然是英國廣播公司（BBC），其後是英國獨立電視台（ITV）和臉書。與此同時，隨著WhatsApp和Instagram作為資訊來源的情況也日益普及，越來越多的人開始轉向社群媒體獲取新聞。
-                </p>
-                <p>英國通訊管理局的研究還發現，全英國實體報紙的年度銷售額已從2010年的2200萬英鎊降至2018年的1040萬英鎊。一些新聞媒體，尤其是每日郵報和衛報，正努力吸引網路讀者以增加閱聽人數。</p>
+                
               </div>
 
               <!-- 上下則 -->
@@ -450,7 +430,7 @@
             </div>
 
             <!-- 右側 aside -->
-            <div class="r_b">
+            <div class="r_b" id="right_content">
               <!-- google側欄廣告 300*600 -->
               <div class="googleAD_aside">
                 <img src="images/newsList/ad.png" alt="">
@@ -757,6 +737,7 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
   <script type="text/javascript" src="js.lib/slick.min.js"></script>
+  <script type="text/javascript" src="js.lib/zebra_pin.min.js"></script>
   <script type="text/javascript" src="js.lib/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript" src="js/layout.js"></script>
 

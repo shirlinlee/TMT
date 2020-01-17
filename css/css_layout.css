@@ -1,15 +1,15 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap&subset=chinese-traditional');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,500,600,700,900&display=swap&subset=chinese-traditional');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,500,600,700,900&display=swap&subset=chinese-traditional");
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?o3ijjq');
-  src:  url('fonts/icomoon.eot?o3ijjq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?o3ijjq') format('truetype'),
-    url('fonts/icomoon.woff?o3ijjq') format('woff'),
-    url('fonts/icomoon.svg?o3ijjq#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?o3ijjq");
+  src: url("fonts/icomoon.eot?o3ijjq#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?o3ijjq") format("truetype"),
+    url("fonts/icomoon.woff?o3ijjq") format("woff"),
+    url("fonts/icomoon.svg?o3ijjq#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +20,8 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Noto Sans TC', sans-serif, Arial, Helvetica, '微軟正黑體', Microsoft JhengHei, Apple LiGothic, '蘋果儷中黑';
+  font-family: "Noto Sans TC", sans-serif, Arial, Helvetica, "微軟正黑體",
+    Microsoft JhengHei, Apple LiGothic, "蘋果儷中黑";
   font-size: 50px;
   background: #ffffff;
   line-height: 1.5;
@@ -38,9 +39,10 @@ body.noScroll {
 }
 
 /** font *****************************************/
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   /* speak: none; */
   font-style: normal;
   font-weight: normal;
@@ -81,7 +83,6 @@ body.noScroll {
   padding-right: 30px;
   margin: 0 auto;
 }
-
 
 /* header ***********************************************/
 header {
@@ -135,7 +136,7 @@ h1 {
   padding: 0;
 }
 
-.hdTop>.flexBox {
+.hdTop > .flexBox {
   position: relative;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -225,13 +226,22 @@ div.TWdate {
   display: none;
 }
 
+.search_icon {
+  display: none;
+  width: 25px;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+}
+
 input,
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-size: 0.26rem;
-  font-family: 'Noto Sans TC', sans-serif, Arial, Helvetica, '微軟正黑體', Microsoft JhengHei, Apple LiGothic, '蘋果儷中黑';
+  font-family: "Noto Sans TC", sans-serif, Arial, Helvetica, "微軟正黑體",
+    Microsoft JhengHei, Apple LiGothic, "蘋果儷中黑";
   /* color: #b6b6b6; */
   border: none;
   -webkit-box-shadow: none;
@@ -275,6 +285,7 @@ button {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   font-size: 0.24rem;
+  height: 35px;
   line-height: 0.64rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -293,7 +304,6 @@ button {
   color: #ffffff;
   background-color: #f25d27;
 }
-
 
 /* 選單列  navBox********************************************/
 .navBox {
@@ -349,7 +359,7 @@ nav {
   z-index: 990;
 }
 
-nav>.flexBox {
+nav > .flexBox {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -373,7 +383,7 @@ nav>.flexBox {
 }
 
 .moreBtn:after {
-  content: '+ 更多';
+  content: "+ 更多";
   display: block;
   position: absolute;
   right: 0;
@@ -408,11 +418,11 @@ nav>.flexBox {
   align-items: center;
 }
 
-.navList>li:not(.navLogo) {
+.navList > li:not(.navLogo) {
   padding: 0.34rem 0;
 }
 
-.navList>li>a {
+.navList > li > a {
   color: #000000;
   font-weight: 400;
   line-height: 1.1;
@@ -421,7 +431,7 @@ nav>.flexBox {
   transition: none;
 }
 
-.navList>li>a:hover {
+.navList > li > a:hover {
   color: #f25d27;
 }
 
@@ -444,7 +454,7 @@ nav>.flexBox {
   position: relative;
 }
 
-.firstUl.downD>a {
+.firstUl.downD > a {
   color: #f25d27;
 }
 
@@ -454,7 +464,7 @@ nav>.flexBox {
 }
 
 .inList {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   position: absolute;
   background-color: #ffffff;
   top: 100%;
@@ -474,7 +484,7 @@ nav>.flexBox {
 }
 
 .inList:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -522,7 +532,7 @@ nav>.flexBox {
   display: none;
 }
 
-.secNavListBox>div {
+.secNavListBox > div {
   max-width: 1100px;
   width: 100%;
   font-size: 0.32rem;
@@ -544,18 +554,18 @@ nav>.flexBox {
   justify-content: space-between;
 }
 
-.secNavList>li:not(:last-child) {
+.secNavList > li:not(:last-child) {
   padding-right: 0.3rem;
 }
 
-.secNavList>li>a {
+.secNavList > li > a {
   display: inline;
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-weight: 900;
-  color: #000000
+  color: #000000;
 }
 
-.secNavList>li>a:hover {
+.secNavList > li > a:hover {
   color: #f25d27;
 }
 
@@ -635,21 +645,21 @@ nav.open {
   -ms-flex-pack: center;
   justify-content: center;
   padding-left: 2em;
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
 }
 
-.navList.open>li {
+.navList.open > li {
   margin: 0 1.4em;
 }
 
-.navList.open>li>a {
+.navList.open > li > a {
   font-weight: 900;
   color: #f25d27;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.navList.open>li>a:hover {
+.navList.open > li > a:hover {
   -webkit-transform: translateY(-0.15em);
   transform: translateY(-0.15em);
 }
@@ -692,7 +702,7 @@ br.copyBr {
 }
 
 .aboutTxt {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.48rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -702,7 +712,7 @@ br.copyBr {
   flex-shrink: 0;
 }
 
-.aboutTxt>div:not(:last-child) {
+.aboutTxt > div:not(:last-child) {
   margin-bottom: 0.4em;
 }
 
@@ -730,7 +740,7 @@ p.aboutP {
 
 .QRtxt {
   text-align: center;
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
   font-size: 0.48rem;
   font-weight: 500;
   color: #040404;
@@ -739,7 +749,7 @@ p.aboutP {
   margin-right: 0.4rem;
 }
 
-.QRtxt>div {
+.QRtxt > div {
   margin-bottom: 0.5em;
 }
 
@@ -748,7 +758,6 @@ p.aboutP {
   max-width: 117px;
   width: 2.34rem;
 }
-
 
 /* socialBox */
 .socialBox .container {
@@ -776,7 +785,7 @@ p.aboutP {
   max-width: 140px;
 }
 
-.connectBox>.flexBox {
+.connectBox > .flexBox {
   padding-bottom: 0.26rem;
 }
 
@@ -818,7 +827,14 @@ p.aboutP {
 }
 
 .igIcon {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   /* background-image: url(../images/ig.svg); */
   /* background-size: 17px auto; */
 }
@@ -875,7 +891,7 @@ p.aboutP {
   color: #6a6a6a;
 }
 
-.subEpaperBox>.flexBox {
+.subEpaperBox > .flexBox {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -914,8 +930,8 @@ p.aboutP {
   padding-bottom: 0;
   margin-left: 0.5rem;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .getEpaper.subEpaperBox button {
@@ -928,7 +944,7 @@ p.aboutP {
   border: 1px solid #f25d27;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .getEpaper.subEpaperBox input {
@@ -1017,9 +1033,8 @@ p.aboutP {
   color: #ffffff;
 }
 
-
 /** goTopBtn **************************/
-.goTopBtn{
+.goTopBtn {
   font-size: 0.44rem;
   color: #ffffff;
   width: 0.7rem;
@@ -1031,20 +1046,19 @@ p.aboutP {
   bottom: 5px;
   cursor: pointer;
 }
-.goTopBtn:hover{
+.goTopBtn:hover {
   opacity: 0.8;
 }
 
-
 /* playIcon *******************************/
-.videoNews{
+.videoNews {
   position: relative;
   /* padding-left: 1.2em;
   width: calc(100% - 1.2em)!important; */
   text-indent: 1.2em;
 }
-.videoNews:before{
-  content: '';
+.videoNews:before {
+  content: "";
   display: block;
   width: 0.8em;
   height: 1.47em;
@@ -1056,24 +1070,23 @@ p.aboutP {
   background-position: top 0.3em left;
   background-size: contain;
 }
-.newsLisBox .videoNews{
+.newsLisBox .videoNews {
   text-indent: 1.5em;
   max-width: calc(100% - 1.5em);
 }
-.newsLisBox .videoNews:before{
+.newsLisBox .videoNews:before {
   width: 1em;
   height: 1em;
   background-position: center;
   background-size: auto 99%;
 }
-.tentBlock .videoNews{
+.tentBlock .videoNews {
   text-indent: 1.4em;
   max-width: calc(100% - 1.4em);
 }
-.tentBlock .videoNews:before{
+.tentBlock .videoNews:before {
   top: 0.1em;
   width: 1em;
   background-position: center;
   background-size: 100% auto;
 }
-
