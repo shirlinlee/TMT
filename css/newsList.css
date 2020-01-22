@@ -122,6 +122,13 @@ a:hover {
   border-color: #d7000f;
 }
 
+/** scrollbar **************************************************/
+ .mCustomScrollBox{ 
+    margin: 0 12px;
+  }
+  #mCSB_3_scrollbar_horizontal{
+    top: 60px;
+  }
 
 /** crumb ******************************************************/
 .crumb .container {
