@@ -653,6 +653,7 @@
 
   .sDown .trdNavList {
     display: block !important;
+    max-width: none;
   }
 
   .trdNavList {
