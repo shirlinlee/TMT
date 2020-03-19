@@ -66,7 +66,8 @@
           <!-- 搜尋完之後，請執行 $('.searchBox').removeClass('open') && $('.searchClick').removeClass('clicked') -->
           <div class="searchBox flexBox">
             <input type="text" placeholder="搜尋什麼...">
-            <button type="button">搜尋</button>
+            <!-- <button type="button">搜尋</button>-->
+            <input type="submit" value="搜尋">
             <div class="searchClick"></div>
             <div class="close mb"></div>
             <img src="images/search.svg" alt="" class="search_icon mb">
@@ -662,8 +663,10 @@
                 <div class="subEpaperBox">
                   <input type="text" placeholder="請輸入電郵地址">
                   <div class="flexBox">
-                    <button type="button">立即訂閱電子報</button>
-                    <button class="cancel" type="button">取消訂閱電子報</button>
+                    <!--<button type="button">立即訂閱電子報</button>
+                    <button class="cancel" type="button">取消訂閱電子報</button>-->
+                    <input type="submit" value="立即訂閱">
+                    <input type="submit" class="CancelEpaperButton" value="取消訂閱電子報">
                   </div>
                 </div>
               </div>
@@ -736,7 +739,8 @@
           </div>
           <div class="getEpaper subEpaperBox flexBox">
             <input type="text" placeholder="請輸入電郵地址">
-            <button type="button">立即訂閱</button>
+            <!--<button type="button">立即訂閱</button>-->
+            <input type="submit" value="立即訂閱">
           </div>
         </div>
       </div>
@@ -763,7 +767,6 @@
   <script type="text/javascript" src="js.lib/jquery-3.3.1.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="js.lib/slick.min.js"></script>
   <script type="text/javascript" src="js.lib/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript" src="js/layout.js"></script>
 

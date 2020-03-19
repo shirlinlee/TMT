@@ -305,6 +305,32 @@ button {
   background-color: #f25d27;
 }
 
+.searchBox input[type="submit"]{
+  width: 1.2rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 0.24rem;
+  height: 35px;
+  line-height: 0.64rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #f25d27;
+  color: #f25d27;
+  font-weight: 500;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-right: 2px;
+  background-image: none;
+}
+
+.searchBox input[type="submit"]:hover{
+  color: #ffffff;
+  background-color: #f25d27;
+}
+
 /* 選單列  navBox********************************************/
 .navBox {
   position: absolute;
@@ -579,6 +605,7 @@ nav > .flexBox {
   line-height: 1.5;
   font-weight: 500;
   display: block !important;
+  max-width: 115px;
 }
 
 .trdNavList a {
@@ -914,11 +941,37 @@ p.aboutP {
   width: 48%;
 }
 
+.subEpaperBox input[type="submit"]{
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f25d27;
+  width: 100%;
+  line-height: 3.2;
+  padding: 0;
+  margin-top: 9px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 48%;
+  border: none;
+}
+
 .subEpaperBox button:hover {
   opacity: 0.8;
 }
 
+.subEpaperBox input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
 .subEpaperBox button.cancel {
+  background-color: #595b5a;
+}
+
+.subEpaperBox input.CancelEpaperButton[type="submit"]{
   background-color: #595b5a;
 }
 
@@ -945,6 +998,20 @@ p.aboutP {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.getEpaper.subEpaperBox input[type="submit"]{
+  margin-top: 0;
+  line-height: 0.92rem;
+  width: 1.76rem;
+  letter-spacing: 0.075em;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border: 1px solid #f25d27;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f25d27;
 }
 
 .getEpaper.subEpaperBox input {

@@ -262,6 +262,11 @@
   .searchBox button {
     margin-top: 10px;
   }
+
+  .searchBox input[type="submit"]{
+   margin-top: 10px;
+  }
+
   .searchBox input {
     margin-top: 8px;
     height: 37px;
@@ -653,6 +658,7 @@
 
   .sDown .trdNavList {
     display: block !important;
+    max-width: none;
   }
 
   .trdNavList {
@@ -730,14 +736,19 @@
     font-size: 0.24rem;
   }
 
-  .searchBox.open input {
+  .searchBox input[type="submit"]{
+    width: 5em;
+    font-size: 0.24rem;
+  }
+
+   /*.searchBox.open input {
     width: calc(100% - 34px);
     padding-left: 23px;
     padding-right: 1em;
     background: none;
     padding-left: 0;
-  }
-
+  }*/
+  
   /** socialMedia.m_mode ************************************/
   .socialMedia.m_mode {
     padding-bottom: 0.44rem;
