@@ -1,4 +1,4 @@
-.crumb ul {
+ƒ.crumb ul {
   width: 100%;
 }
 
@@ -27,8 +27,22 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
+}
+
+.articleBox iframe.instagram-media {
+    position: unset;
+    height: 676px !important;
+}
+
+.articleBox .infogram-embed iframe {
+    position: unset;
+}
+
+.articleBox div.infogram-embed {
+  position: unset;
+  display: block;
 }
 
 .articleBox div {

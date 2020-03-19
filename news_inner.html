@@ -75,7 +75,8 @@
           <!-- 搜尋完之後，請執行 $('.searchBox').removeClass('open') && $('.searchClick').removeClass('clicked') -->
           <div class="searchBox flexBox">
             <input type="text" placeholder="搜尋什麼...">
-            <button type="button">搜尋</button>
+            <!-- <button type="button">搜尋</button>-->
+            <input type="submit" value="搜尋">
             <div class="searchClick"></div>
             <div class="close mb"></div>
             <img src="images/search.svg" alt="" class="search_icon mb">
@@ -394,10 +395,14 @@
 
               <!-- 文字編輯器 - 文章放置處 -->
               <div class="articleBox">
+
+                <p><iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/B9c_wc3nFKT/embed/?cr=1&amp;v=12&amp;wp=540&amp;rd=https%3A%2F%2Fwww.merit-times.com.tw&amp;rp=%2FNewsPage.aspx%3Funid%3D579169#%7B%22ci%22%3A0%2C%22os%22%3A1081.670000000031%2C%22ls%22%3A859.2800000000125%2C%22le%22%3A861.1300000000028%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="676" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe></p>
                 <p>數位時代與生活關係密切，手機更成為人們看資訊看世界的重要工具，正在看文字的你可能也是這樣的族群。</p>
                 <p>根據英國衛報報導，英國通訊管理局（Ofcom）指出，現在英國年輕人幾乎不看電視新聞，且近一半的英國人選擇從社群媒體獲取新聞。</p>
-                
+                <p><div class="infogram-embed" data-id="4d2a1b00-f3f6-4b3f-bd07-80627b3e8f8b" data-type="interactive" data-title="武漢肺炎擴散病例"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/4d2a1b00-f3f6-4b3f-bd07-80627b3e8f8b" style="color:#989898!important;text-decoration:none!important;" target="_blank">武漢肺炎擴散病例</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div></p>
+                <p>根據英國衛報報導，英國通訊管理局（Ofcom）指出，現在英國年輕人幾乎不看電視新聞，且近一半的英國人選擇從社群媒體獲取新聞。</p>
               </div>
+
 
               <!-- 上下則 -->
               <div class="npBtnBox flexBox">
@@ -529,8 +534,10 @@
                 <div class="subEpaperBox">
                   <input type="text" placeholder="請輸入電郵地址">
                   <div class="flexBox">
-                    <button type="button">立即訂閱電子報</button>
-                    <button class="cancel" type="button">取消訂閱電子報</button>
+                    <!--<button type="button">立即訂閱電子報</button>
+                    <button class="cancel" type="button">取消訂閱電子報</button>-->
+                    <input type="submit" value="立即訂閱">
+                    <input type="submit" class="CancelEpaperButton" value="取消訂閱電子報">
                   </div>
                 </div>
               </div>
@@ -622,30 +629,7 @@
                 </div>
                 <div class="relaTxt">對抗肥胖基因 台大：找對運動方式就能瘦</div>
               </a>
-              <a href="#">
-                <div class="relaImg">
-                  <img src="images/218x150.png" style="background-image: url(images/newsList/newing-1.png);" alt="">
-                </div>
-                <div class="relaTxt">對抗肥胖基因 台大：找對運動方式就能瘦</div>
-              </a>
-              <a href="#">
-                <div class="relaImg">
-                  <img src="images/218x150.png" style="background-image: url(images/newsList/newing-1.png);" alt="">
-                </div>
-                <div class="relaTxt">對抗肥胖基因 台大：找對運動方式就能瘦</div>
-              </a>
-              <a href="#">
-                <div class="relaImg">
-                  <img src="images/218x150.png" style="background-image: url(images/newsList/newing-1.png);" alt="">
-                </div>
-                <div class="relaTxt">對抗肥胖基因 台大：找對運動方式就能瘦</div>
-              </a>
-              <a href="#">
-                <div class="relaImg">
-                  <img src="images/218x150.png" style="background-image: url(images/newsList/newing-1.png);" alt="">
-                </div>
-                <div class="relaTxt">對抗肥胖基因 台大：找對運動方式就能瘦</div>
-              </a>
+        
             </div>
           </div>
         </div>
@@ -709,7 +693,8 @@
           </div>
           <div class="getEpaper subEpaperBox flexBox">
             <input type="text" placeholder="請輸入電郵地址">
-            <button type="button">立即訂閱</button>
+            <!--<button type="button">立即訂閱</button>-->
+            <input type="submit" value="立即訂閱">
           </div>
         </div>
       </div>
