@@ -106,9 +106,9 @@ $(function () {
     slidesToScroll: 1,
     infinite: false,
     prevArrow:
-      '<div class="video-prev videoBtn"><img src="images/arrow_2.png" alt=""></div>',
+      '<div class="video-prev videoBtn"><span class="iconFont icon-cheveron-left"></span></div>',
     nextArrow:
-      '<div class="video-next videoBtn"><img src="images/arrow.png" alt=""></div>',
+      '<div class="video-next videoBtn"><span class="iconFont icon-cheveron-right"></span></div>',
     responsive: [
       {
         breakpoint: 599,

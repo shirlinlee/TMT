@@ -417,7 +417,7 @@ a.newsListTlt:hover {
   content: "";
   display: block;
   width: 150vw;
-  height: 140%;
+  height: 190%;
   position: absolute;
   top: 0.2rem;
   left: -30vw;
@@ -530,17 +530,20 @@ a.newsListTlt:hover {
 }
 
 .videoBtn {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 0;
   background-color: #f25d28;
   z-index: 300;
 }
 
-.videoBtn img {
-  width: 7px;
-  margin: 3px auto;
+.videoBtn span {
+  display: block;
+  font-size: 0.45rem;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
 }
 
 .videoBtn.slick-disabled {
@@ -557,7 +560,7 @@ a.newsListTlt:hover {
 }
 
 .video-prev {
-  right: 5px;
+  right: 18px;
 }
 
 /** masterBox ************************************/
