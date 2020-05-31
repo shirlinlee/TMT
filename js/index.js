@@ -104,7 +104,10 @@ $(function () {
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: false,
+    // infinite: false,  //不開會停止autoplay 0531
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     prevArrow:
       '<div class="video-prev videoBtn"><span class="iconFont icon-cheveron-left"></span></div>',
     nextArrow:
