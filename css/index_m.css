@@ -58,6 +58,9 @@
   .newsBb {
     width: 48%;
   }
+  ul.newsLisBox{
+    padding-left: 25px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -377,6 +380,10 @@
     margin: 0 auto 20px 0;
     width: calc(100% - 40px);
     margin-left: 20px;
+  }
+  /*****************************************/
+  ul.newsLisBox{
+    padding-left: 0px;
   }
 }
 
