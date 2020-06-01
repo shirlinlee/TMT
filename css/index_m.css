@@ -704,4 +704,10 @@
   .sec03_5 .blockTlt {
     left: -7px;
   }
+  /*****************************************/
+  .videoSlick {
+    margin: 0 auto 20px 0;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
 }
