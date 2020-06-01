@@ -32,12 +32,14 @@
 }
 
 .articleBox iframe.instagram-media {
-    position: unset;
-    height: 676px !important;
+  position: unset;
+  margin-top: 15px;
+  height: 676px !important;
 }
 
 .articleBox .infogram-embed iframe {
-    position: unset;
+  margin-top: 15px;
+  position: unset;
 }
 
 .articleBox div.infogram-embed {
@@ -258,13 +260,6 @@ tr {
   padding-top: 0.55rem;
   padding-bottom: 0.1rem;
   border-bottom: 1px solid #a3a3a3;
-}
-
-.articleBox a {
-  display: inline;
-}
-
-.articleBox p {
   font-size: 0.32rem;
   line-height: 1.75;
   color: #6a6a6a;
@@ -272,6 +267,20 @@ tr {
   margin-bottom: 2em;
   text-align: justify;
   letter-spacing: normal;
+}
+
+.articleBox a {
+  display: inline;
+}
+
+.articleBox p {
+  /* font-size: 0.32rem;
+  line-height: 1.75;
+  color: #6a6a6a;
+  font-weight: 500;
+  margin-bottom: 2em;
+  text-align: justify;
+  letter-spacing: normal; */
 }
 
 .articleBox figcaption {
@@ -358,7 +367,6 @@ tr {
   padding-top: 0.6rem;
   padding-bottom: 1rem;
 }
-
 
 .relatedATBox .container {
   position: relative;
@@ -560,7 +568,8 @@ tr {
 
   /** 文字編輯器 **************************/
 
-  .articleBox p {
+  .articleBox p,
+  .articleBox div {
     margin-bottom: 1.8em;
   }
 
@@ -572,7 +581,6 @@ tr {
     line-height: 1.4;
     min-height: 2.8em;
   }
-
 
   .articleBox div {
     position: relative;
