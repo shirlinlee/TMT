@@ -522,22 +522,7 @@
                 </div>
 
                 <!-- videoBox -->
-                <div class="videoBox">
-                  <div class="blockTlt">影音專區</div>
-                  <div class="liveVideo">
-                    <!-- liveIcon 如果不是直播則隱藏 -->
-                    <div class="liveIcon">直播中</div>
-                    <img src="images/videoBG.png" alt="" />
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/6O2EvZnoyOs"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
+                
               </div>
 
               <div class="r_b">
@@ -587,8 +572,54 @@
                     </div>
                   </div>
 
-                  <!-- 訂閱電子報 -->
-                  <div class="subEpaperBox">
+                  <!-- 訂閱電子報-手機版顯示 -->
+                  <div class="subEpaperBox subEpaperBoxWEB">
+                    <input type="text" placeholder="請輸入電郵地址" />
+                    <div class="flexBox">
+                      <!--<button type="button">立即訂閱電子報</button>
+                    <button class="cancel" type="button">取消訂閱電子報</button>-->
+                      <input type="submit" value="立即訂閱" />
+                      <input
+                        type="submit"
+                        class="CancelEpaperButton"
+                        value="取消訂閱電子報"
+                      />
+                    </div>
+                  </div>
+        
+                </div>
+                
+                <div class="clear"></div>
+              </div>
+              
+            </div>
+            <!--新增移動區塊-->
+            <div class="container flexBox">
+              <div class="l_b">
+                
+                <!-- videoBox -->
+                <div class="videoBox">
+                  <div class="blockTlt">影音專區</div>
+                  <div class="liveVideo">
+                    <!-- liveIcon 如果不是直播則隱藏 -->
+                    <div class="liveIcon">直播中</div>
+                    <img src="images/videoBG.png" alt="" />
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/6O2EvZnoyOs"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <div class="r_b">
+                <div class="paperP">
+                  <!-- 訂閱電子報-網頁版顯示 -->
+                  <div class="subEpaperBox subEpaperBoxMB">
                     <input type="text" placeholder="請輸入電郵地址" />
                     <div class="flexBox">
                       <!--<button type="button">立即訂閱電子報</button>
@@ -604,13 +635,14 @@
                 </div>
 
                 <!-- adBanner 圖片大小 300*250 -->
-                <div class="adBanner adB01">
+                <div class="adBanner adB01 adBannerdisplay">
                   <img src="images/ad-2.png" alt="" />
                 </div>
                 <div class="clear"></div>
               </div>
               
             </div>
+            <!--新增輪播區塊-->
             <div class="container">
               <div class="videoSlick">
                 <div class="video_slick">
@@ -850,83 +882,8 @@
               </div>
             </div>
 
-            <!-- vageBox -->
-            <div class="vageBox">
-              <div class="container">
-                <div class="blockTlt">友善食農</div>
-                <div class="tent">
-                  <div>
-                    <div class="flexBox itlFxb">
-                      <!-- 圖片大小 300*300 正方形 -->
-                      <a href="#" class="itemLink">
-                        <div class="itemImg">
-                          <img
-                            src="images/square.png"
-                            style="background-image: url(images/img-6.png);"
-                            alt=""
-                          />
-                          <div class="itemTxtBox">
-                            <!-- 標題 -->
-                            <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
-                            <!-- 日期 -->
-                            <div class="newsDate">2019.06.05</div>
-                          </div>
-                        </div>
-                        <!-- 內文節錄 -->
-                        <p class="itemDescribe">
-                          尤記得10多年以前，我們只能窺見素食的一點曙光，大膽的假設(期待)素食一定是未來的飲食潮流，果真經過這幾年努力的宣傳素食，食安問題頻傳，國人吹起養生之風，漸漸關注健康的議題，而根據美國最新MarketsandMarkets
-                          的一份研究報告指出，2020年以植物為主的肉類替代品(素食製品)消費市場將達50.17億美元！
-                        </p>
-                      </a>
-
-                      <a href="#" class="itemLink">
-                        <div class="itemImg">
-                          <img
-                            src="images/square.png"
-                            style="background-image: url(images/img-7.png);"
-                            alt=""
-                          />
-                          <div class="itemTxtBox">
-                            <p class="itemTlt">【愛植栽】天然的清道夫 虎尾蘭</p>
-                            <div class="newsDate">2019.06.05</div>
-                          </div>
-                        </div>
-                        <p class="itemDescribe">
-                          尤記得10多年以前，我們只能窺見素食的一點曙光，大膽的假設(期待)素食一定是未來的飲食潮流，果真經過這幾年努力的宣傳素食，食安問題頻傳，國人吹起養生之風，漸漸關注健康的議題，而根據美國最新MarketsandMarkets
-                          的一份研究報告指出，2020年以植物為主的肉類替代品(素食製品)消費市場將達50.17億美元！
-                        </p>
-                      </a>
-
-                      <div class="lastDiv flexBox">
-                        <a href="#" class="itemLink">
-                          <div class="itemImg">
-                            <img
-                              src="images/square.png"
-                              style="background-image: url(images/img-8.png);"
-                              alt=""
-                            />
-                            <div class="itemTxtBox">
-                              <p class="itemTlt">
-                                【愛植栽】天然的清道夫 虎尾蘭
-                              </p>
-                              <div class="newsDate">2019.06.05</div>
-                            </div>
-                          </div>
-                          <p class="itemDescribe">
-                            尤記得10多年以前，我們只能窺見素食的一點曙光，大膽的假設(期待)素食一定是未來的飲食潮流，果真經過這幾年努力的宣傳素食，食安問題頻傳，國人吹起養生之風，漸漸關注健康的議題，而根據美國最新MarketsandMarkets
-                            的一份研究報告指出，2020年以植物為主的肉類替代品(素食製品)消費市場將達50.17億美元！
-                          </p>
-                        </a>
-                        <div class="itemSeeMore">
-                          <a href="#" class="itemSeeMoreBtn">看更多</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <!-- vageBox 已刪除-->
+            
             <!-- foodBox -->
             <div class="foodBox" style="display: none;">
               <div class="container">

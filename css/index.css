@@ -419,7 +419,7 @@ a.newsListTlt:hover {
   width: 150vw;
   height: 190%;
   position: absolute;
-  top: 0.2rem;
+  top: -0.6rem;
   left: -30vw;
   background-color: #eff0ef;
   z-index: -11;
@@ -1210,4 +1210,9 @@ a.itemLink:hover .itemDescribe {
 }
 .sec03_5 .tentBlock {
   max-width: none;
+}
+
+ /* 首頁網頁版隱藏 */
+.subEpaperBoxWEB{
+  display: none;
 }
