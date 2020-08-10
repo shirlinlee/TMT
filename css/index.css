@@ -439,6 +439,10 @@ a.newsListTlt:hover {
   top: 0;
 }
 
+.main_video {
+  width: 100%;
+}
+
 .videoBox .blockTlt {
   height: calc(100% - 1rem);
   top: auto;
@@ -472,8 +476,7 @@ a.newsListTlt:hover {
 .liveVideo {
   position: relative;
   max-width: 630px;
-  width: calc(100% - 0.8rem);
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .liveIcon {
@@ -1212,7 +1215,7 @@ a.itemLink:hover .itemDescribe {
   max-width: none;
 }
 
- /* 首頁網頁版隱藏 */
-.subEpaperBoxWEB{
+/* 首頁網頁版隱藏 */
+.subEpaperBoxWEB {
   display: none;
 }

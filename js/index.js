@@ -102,7 +102,7 @@ $(function () {
     dots: false,
     arrows: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     // infinite: false,  //不開會停止autoplay 0531
     infinite: true,
