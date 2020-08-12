@@ -223,7 +223,30 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 0.8rem;
+  padding-bottom: 50px;
+}
+.sec_01 .container .seeMore {
+  text-indent: 40px;
+}
+
+ul.custom_paging li {
+  display: none;
+}
+
+ul.custom_paging li.slick-active {
+  display: block;
+}
+
+ul.custom_paging {
+  position: absolute;
+  top: 0;
+  font-size: 13px;
+  line-height: 30px;
+  left: 50%;
+  transform: translate(-50%, -40px);
+  font-style: italic;
+  color: #f25d28;
+  letter-spacing: 2px;
 }
 
 .newsLisBoxWrap,
@@ -517,8 +540,8 @@ a.newsListTlt:hover {
 
 .videoSlick {
   margin: 0 auto 20px 0;
-  width: calc(100% - 40px);
-  margin-left: 40px;
+  width: calc(100% - 50px);
+  margin-left: 50px;
 }
 
 .video_slick {
@@ -536,7 +559,7 @@ a.newsListTlt:hover {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 0;
+  top: -40px;
   background-color: #f25d28;
   z-index: 300;
 }
@@ -554,7 +577,7 @@ a.newsListTlt:hover {
 }
 
 .video-next {
-  right: -20px;
+  right: 15px;
 }
 
 .videoBtn:not(.slick-disabled):hover {
@@ -563,7 +586,7 @@ a.newsListTlt:hover {
 }
 
 .video-prev {
-  right: 18px;
+  left: 0;
 }
 
 /** masterBox ************************************/

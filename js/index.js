@@ -107,17 +107,27 @@ $(function () {
     // infinite: false,  //不開會停止autoplay 0531
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 6000,
+    dots: true,
+    dotsClass: "custom_paging",
+    customPaging: function (slider, i) {
+      return i + 1 + "/" + slider.slideCount;
+    },
     prevArrow:
       '<div class="video-prev videoBtn"><span class="iconFont icon-cheveron-left"></span></div>',
     nextArrow:
       '<div class="video-next videoBtn"><span class="iconFont icon-cheveron-right"></span></div>',
     responsive: [
       {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
         breakpoint: 599,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
         },
       },
       // {
