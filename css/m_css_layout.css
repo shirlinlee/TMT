@@ -1,6 +1,7 @@
 /* media
 ----------------------------------------------------------------------------*/
 @media screen and (max-width: 1160px) {
+
   body,
   html {
     font-size: 48px;
@@ -17,6 +18,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+
   body,
   html {
     font-size: 46px;
@@ -49,7 +51,7 @@
     font-size: 0.28rem;
   }
 
-  .fixT .navList > li > a {
+  .fixT .navList>li>a {
     font-weight: 500;
   }
 }
@@ -63,17 +65,18 @@
     padding-bottom: 0.5rem;
   }
 
-  .secNavList > li {
+  .secNavList>li {
     padding-bottom: 2em;
   }
 
-  .secNavList > li:not(:nth-child(5)),
-  .secNavList > li:not(:last-child) {
+  .secNavList>li:not(:nth-child(5)),
+  .secNavList>li:not(:last-child) {
     padding-right: 0.5rem;
   }
 }
 
 @media screen and (max-width: 900px) {
+
   body,
   html {
     font-size: 44px;
@@ -151,6 +154,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   body,
   html {
     font-size: 50px;
@@ -224,7 +228,7 @@
     padding-bottom: 0.3rem;
   }
 
-  .hdTop > .flexBox {
+  .hdTop>.flexBox {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -263,8 +267,8 @@
     margin-top: 10px;
   }
 
-  .searchBox input[type="submit"]{
-   margin-top: 10px;
+  .searchBox input[type="submit"] {
+    margin-top: 10px;
   }
 
   .searchBox input {
@@ -346,7 +350,7 @@
     /* padding-top: 0.8rem; */
   }
 
-  .fixT .navList > li > a {
+  .fixT .navList>li>a {
     font-weight: 900;
   }
 
@@ -371,7 +375,7 @@
     padding-top: 0.8rem;
   }
 
-  nav > .flexBox {
+  nav>.flexBox {
     display: block;
   }
 
@@ -427,14 +431,14 @@
     padding-left: 0;
   }
 
-  .navList.open > li,
-  .navList > li {
+  .navList.open>li,
+  .navList>li {
     width: 33.3333%;
     margin: 0 0 1em 0;
     padding: 0;
   }
 
-  .navList > li > a {
+  .navList>li>a {
     width: 4.5em;
     margin: auto;
   }
@@ -448,7 +452,7 @@
   }
 
   /** secNavListBox **************************************/
-  .secNavListBox > div {
+  .secNavListBox>div {
     padding-top: 0.5rem;
   }
 
@@ -509,7 +513,7 @@
     margin-right: 0.3rem;
   }
 
-  .QRtxt > div {
+  .QRtxt>div {
     margin-bottom: 0.5em;
   }
 
@@ -528,7 +532,7 @@
     max-width: 157px;
   }
 
-  .connectBox > .flexBox {
+  .connectBox>.flexBox {
     padding-bottom: 0.16rem;
   }
 
@@ -557,6 +561,7 @@
 }
 
 @media screen and (max-width: 640px) {
+
   body,
   html {
     font-size: 48px;
@@ -564,6 +569,7 @@
 }
 
 @media screen and (max-width: 580px) {
+
   body,
   html {
     font-size: 46px;
@@ -575,8 +581,8 @@
     padding-top: 0.8rem;
   }
 
-  .navList.open > li,
-  .navList > li {
+  .navList.open>li,
+  .navList>li {
     width: 50%;
     margin-bottom: 0.6rem;
   }
@@ -587,7 +593,7 @@
   }
 
   /** secNavListBox *******************************************/
-  .secNavListBox > div {
+  .secNavListBox>div {
     padding-top: 0;
   }
 
@@ -598,7 +604,7 @@
     max-width: none;
   }
 
-  .secNavList > li {
+  .secNavList>li {
     position: relative;
     padding-bottom: 0;
     padding-right: 0 !important;
@@ -608,16 +614,16 @@
     transition: 0.3s;
   }
 
-  .secNavList > li.sDown {
+  .secNavList>li.sDown {
     padding-bottom: 0.5em;
     color: #e60012;
   }
 
-  .secNavList > li.sDown > a {
+  .secNavList>li.sDown>a {
     color: #e60012;
   }
 
-  .secNavList > li > a {
+  .secNavList>li>a {
     display: block;
     /* position: relative; */
     line-height: 3;
@@ -676,7 +682,7 @@
     display: block;
   }
 
-  .m_navMediaBox > .flexBox {
+  .m_navMediaBox>.flexBox {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -708,6 +714,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
   body,
   html {
     font-size: 50px;
@@ -728,27 +735,26 @@
   /* header ***********************************************/
 
   /* search bar */
-  .searchBox {
-  }
+  .searchBox {}
 
   .searchBox button {
     width: 5em;
     font-size: 0.24rem;
   }
 
-  .searchBox input[type="submit"]{
+  .searchBox input[type="submit"] {
     width: 5em;
     font-size: 0.24rem;
   }
 
-   /*.searchBox.open input {
+  /*.searchBox.open input {
     width: calc(100% - 34px);
     padding-left: 23px;
     padding-right: 1em;
     background: none;
     padding-left: 0;
   }*/
-  
+
   /** socialMedia.m_mode ************************************/
   .socialMedia.m_mode {
     padding-bottom: 0.44rem;
@@ -768,10 +774,23 @@
     display: inherit;
   }
 
-  .copyRightBox p {
+  .copyRightBox {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .copyRightBox p,
+  .copyRightBox div {
+    width: 100%;
     line-height: 1.5;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    display: block;
+  }
+
+  .copyRightBox a {
+    line-height: 1.5;
+    display: block;
+    margin: 0 10px 10px !important;
   }
 
   /* infoBox */
@@ -827,7 +846,7 @@
     justify-content: center;
   }
 
-  .QRtxt > div {
+  .QRtxt>div {
     margin-bottom: 0.2rem;
   }
 
@@ -856,7 +875,7 @@
     padding-top: 0.24rem;
   }
 
-  .connectBox > .flexBox {
+  .connectBox>.flexBox {
     padding-bottom: 0.22rem;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -883,6 +902,7 @@
 }
 
 @media screen and (max-width: 319px) {
+
   body,
   html {
     font-size: 48px;

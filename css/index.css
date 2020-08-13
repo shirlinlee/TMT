@@ -24,18 +24,14 @@
   z-index: 199;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(55%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 1))
-  );
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 55%,
-    rgba(0, 0, 0, 1)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(55%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1)));
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 55%,
+      rgba(0, 0, 0, 1));
 }
 
 .slickTent img {
@@ -52,18 +48,14 @@
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(55%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 1))
-  );
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 55%,
-    rgba(0, 0, 0, 1)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(55%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1)));
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 55%,
+      rgba(0, 0, 0, 1));
 }
 
 /* .slick a .slickTent img {
@@ -203,9 +195,11 @@
   cursor: pointer;
   letter-spacing: 0.075em;
 }
+
 .googleAd01OpenBtnBox .container {
   position: relative;
 }
+
 .googleAd01OpenBtn {
   top: auto;
   bottom: 0.3rem;
@@ -223,9 +217,10 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 0.8rem;
 }
-.sec_01 .container .seeMore {
+
+.seeMore.video {
   text-indent: 40px;
 }
 
@@ -306,18 +301,14 @@ ul.custom_paging {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(55%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 1))
-  );
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 55%,
-    rgba(0, 0, 0, 1)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(55%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1)));
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 55%,
+      rgba(0, 0, 0, 1));
   z-index: 5;
 }
 
@@ -396,11 +387,13 @@ ul.custom_paging {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 0.3rem 0 0.14rem 0;
+  /* padding: 0.3rem 0 0.14rem 0; */
+  padding: 14px 0 11px;
 }
-.newsLisBox li:last-child {
+
+/* .newsLisBox li:last-child {
   border-bottom: none;
-}
+} */
 
 a.newsListTlt {
   font-size: 0.36rem;
@@ -426,7 +419,7 @@ a.newsListTlt:hover {
   font-weight: 200;
 }
 
-.newsLisBox ~ .seeMore {
+.newsLisBox~.seeMore {
   display: none;
 }
 
@@ -464,6 +457,7 @@ a.newsListTlt:hover {
 
 .main_video {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .videoBox .blockTlt {
@@ -547,13 +541,52 @@ a.newsListTlt:hover {
 .video_slick {
   position: relative;
   margin-right: 15px;
+  overflow: hidden;
 }
 
-.video_slick iframe {
+.video_slick img {
+  transition: all .6s;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.video_slick:after {
+  content: '';
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  background-image: url(../images/play.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s;
 }
+
+@media only screen and (min-width: 769px) {
+  .video_slick:hover img {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+
+  .video_slick:hover:after {
+    opacity: 1;
+  }
+}
+
+
 
 .videoBtn {
   width: 30px;
@@ -561,7 +594,7 @@ a.newsListTlt:hover {
   position: absolute;
   top: -40px;
   background-color: #f25d28;
-  z-index: 300;
+  z-index: 30;
 }
 
 .videoBtn span {
@@ -673,18 +706,14 @@ a.seeMoreLink:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(55%, rgba(255, 255, 255, 0)),
-    to(rgba(255, 255, 255, 1))
-  );
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 55%,
-    rgba(255, 255, 255, 1)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(55%, rgba(255, 255, 255, 0)),
+      to(rgba(255, 255, 255, 1)));
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(255, 255, 255, 1));
 }
 
 .ePaperBox .seeMore {
@@ -701,6 +730,7 @@ a.seeMoreLink:hover {
   cursor: pointer;
   overflow: hidden;
 }
+
 .adBanner img {
   width: 300px !important;
 }
@@ -710,18 +740,14 @@ a.seeMoreLink:hover {
 .kv02 {
   background-color: #212121;
   overflow: hidden;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(55%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 1))
-  );
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 55%,
-    rgba(0, 0, 0, 1)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(55%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1)));
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 55%,
+      rgba(0, 0, 0, 1));
 }
 
 .kv02Img {
@@ -745,18 +771,14 @@ a.seeMoreLink:hover {
   z-index: 199;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(55%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 1))
-  );
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 55%,
-    rgba(0, 0, 0, 1)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(55%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1)));
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 55%,
+      rgba(0, 0, 0, 1));
 }
 
 .kv02Img img {
@@ -975,18 +997,14 @@ a.itemLink:hover p.itemTlt {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(45%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 1))
-  );
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 45%,
-    rgba(0, 0, 0, 1)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(45%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1)));
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(0, 0, 0, 1));
   /* background-color: #000000; */
 }
 
@@ -1035,7 +1053,7 @@ a.itemLink:hover .itemDescribe {
   padding-top: 0.8rem;
 }
 
-.sec_03 .container > .flexBox {
+.sec_03 .container>.flexBox {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1099,7 +1117,7 @@ a.itemLink:hover .itemDescribe {
   width: 100%;
 }
 
-.tentBlock > li {
+.tentBlock>li {
   border-bottom: 1px solid rgba(182, 182, 182, 0.8);
   padding-bottom: 0.16rem;
   padding-top: 0.28rem;
@@ -1119,9 +1137,11 @@ a.itemLink:hover .itemDescribe {
   -ms-flex-align: start;
   align-items: flex-start;
 }
+
 .penBox .linkTent {
   width: calc(100% - 2.1rem);
 }
+
 .linkTentTlt {
   font-size: 0.32rem;
   color: #000000;
@@ -1213,6 +1233,7 @@ a.itemLink:hover .itemDescribe {
   cursor: pointer;
   overflow: hidden;
 }
+
 .adBanner02 img {
   width: 300px !important;
 }
@@ -1227,13 +1248,16 @@ a.itemLink:hover .itemDescribe {
   padding-bottom: 0.8rem;
   /* padding-top: 0.2rem; */
 }
+
 .sec03_5 .fxb01 {
   width: 100%;
 }
+
 .sec03_5 .news_lb {
   padding-right: 0;
   width: 100%;
 }
+
 .sec03_5 .tentBlock {
   max-width: none;
 }

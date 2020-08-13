@@ -58,7 +58,8 @@
   .newsBb {
     width: 48%;
   }
-  ul.newsLisBox{
+
+  ul.newsLisBox {
     padding-left: 25px;
   }
 }
@@ -83,15 +84,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .subEpaperBoxMB{
+  .subEpaperBoxMB {
     display: none;
   }
-  .adBannerdisplay{
+
+  .adBannerdisplay {
     display: none;
   }
-  .subEpaperBoxWEB{
-    display:block;
+
+  .subEpaperBoxWEB {
+    display: block;
   }
+
   /** KV **********************/
   .kv {
     padding-top: 1.8rem;
@@ -139,6 +143,7 @@
     top: -2px;
     right: 10px;
   }
+
   /* .googleAd01OpenBtnBox .container{
     position: static;
   } */
@@ -156,14 +161,18 @@
 
   .sec_01 .container {
     display: block;
-    padding-bottom: 0.8rem;
+    /* padding-bottom: 0.8rem; */
+  }
+
+  .video_slick {
+    margin: 0 7.5px;
   }
 
   .newsLisBoxWrap {
     padding-left: 40px;
     padding-top: 0 !important;
-  } 
-  
+  }
+
 
   .l_b {
     width: auto;
@@ -182,6 +191,7 @@
     box-sizing: border-box;
     padding-left: 0.8rem;
   }
+
   .sec03_5 .news_lb {
     width: 100% !important;
     padding-top: 0;
@@ -209,7 +219,7 @@
     font-weight: 200;
   }
 
-  .newsLisBox ~ .seeMore {
+  .newsLisBox~.seeMore {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -226,7 +236,8 @@
     display: none;
   }
 
-  .liveVideo, .sec01SlickBox  {
+  .liveVideo,
+  .sec01SlickBox {
     max-width: 708px;
     width: auto;
     margin: auto;
@@ -237,15 +248,15 @@
   }
 
   /** masterBox ************************************/
-  .r_b > div:nth-child(1) {
+  .r_b>div:nth-child(1) {
     float: left;
   }
 
-  .r_b > div:nth-child(2) {
+  .r_b>div:nth-child(2) {
     float: right;
   }
 
-  .r_b > * {
+  .r_b>* {
     width: 49%;
   }
 
@@ -332,12 +343,12 @@
   }
 
   .sec_03 .blockTlt,
-  .sec_03 .news_rb .blockTlt  {
+  .sec_03 .news_rb .blockTlt {
     right: auto;
     left: -7px;
   }
 
-  .tentBlock > li {
+  .tentBlock>li {
     padding-bottom: 0.2rem;
     padding-top: 0.2rem;
     position: relative;
@@ -347,7 +358,7 @@
     padding-right: 0;
   }
 
-  .penBox .linkTent > a {
+  .penBox .linkTent>a {
     min-height: 2em;
   }
 
@@ -384,19 +395,38 @@
   .sec03_5 {
     background-color: #ffffff;
   }
+
   /*****************************************/
   .videoSlick {
-    margin: -40px auto 20px 0;
-    width: calc(100% - 40px);
-    margin-left: 20px;
+    margin: 0 auto 20px;
+    width: 100%;
   }
+
+  .video-prev {
+    left: 7px;
+  }
+
+  .video-next {
+    right: 7px;
+  }
+
+  .seeMore.video {
+    text-indent: 0;
+  }
+
+  .videoBox {
+    padding-top: 0;
+  }
+
+
   /*****************************************/
-  ul.newsLisBox{
+  ul.newsLisBox {
     padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 480px) {
+
   /** KV **********************/
   .kv {
     padding-top: 1.8rem;
@@ -411,8 +441,8 @@
 
   .slickTent::before {
     top: -118px;
-    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)) );
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 1) );
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 1));
   }
 
   .slickBtn {
@@ -420,7 +450,7 @@
   }
 
   .newsLisBoxWrap .blockTlt {
-    left:  -7px;
+    left: -7px;
     top: 22px;
   }
 
@@ -451,29 +481,27 @@
   /** article ***************************************************/
 
   /* sec_01 */
-  .sec_01 .container {
-    padding-bottom: 0.5rem;
-  }
 
   .r_b {
     padding-top: 0.92rem;
     padding-left: 0;
   }
 
+  .videoSlick {
+    margin: 0 -6px 20px;
+    width: calc(100% + 12px);
+  }
+
   /** sec01Slick ***********************************/
   .secSlickImg::before {
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(5%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1))
-    );
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 5%,
-      rgba(0, 0, 0, 1)
-    );
+    background-image: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        color-stop(5%, rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 1)));
+    background-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0) 5%,
+        rgba(0, 0, 0, 1));
   }
 
   .newsTlt h3 {
@@ -494,21 +522,21 @@
     line-height: 1.5;
   }
 
-  .newsLisBox ~ .seeMore {
+  .newsLisBox~.seeMore {
     padding-top: 0.3rem;
     padding-bottom: 0.12rem;
   }
 
   /** masterBox ************************************/
-  .r_b > div:nth-child(1) {
+  .r_b>div:nth-child(1) {
     float: none;
   }
 
-  .r_b > div:nth-child(2) {
+  .r_b>div:nth-child(2) {
     float: none;
   }
 
-  .r_b > * {
+  .r_b>* {
     width: auto;
   }
 
@@ -545,18 +573,14 @@
   }
 
   .ePaperImg:before {
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(15%, rgba(255, 255, 255, 0)),
-      to(rgba(255, 255, 255, 1))
-    );
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 15%,
-      rgba(255, 255, 255, 1)
-    );
+    background-image: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        color-stop(15%, rgba(255, 255, 255, 0)),
+        to(rgba(255, 255, 255, 1)));
+    background-image: linear-gradient(to bottom,
+        rgba(255, 255, 255, 0) 15%,
+        rgba(255, 255, 255, 1));
   }
 
   .ePaperBox .seeMore {
@@ -665,7 +689,7 @@
     padding-bottom: 0.74rem;
   }
 
-  .sec_03 .container > .flexBox {
+  .sec_03 .container>.flexBox {
     display: block;
   }
 
@@ -674,7 +698,7 @@
     top: 6.2em;
   }
 
-  .penBox .linkTent > a {
+  .penBox .linkTent>a {
     min-height: 0;
   }
 
@@ -682,7 +706,7 @@
     width: auto;
   }
 
-  .tentBlock > li.onM {
+  .tentBlock>li.onM {
     display: none;
   }
 
@@ -713,7 +737,7 @@
     left: -10vw;
   }
 
-  .adBannerBox > div {
+  .adBannerBox>div {
     margin-left: auto;
     margin-right: auto;
   }
@@ -723,6 +747,7 @@
     background-color: #eff0ef;
     padding-bottom: 0;
   }
+
   .sec03_5 .blockTlt {
     left: -7px;
   }

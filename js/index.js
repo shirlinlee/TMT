@@ -104,9 +104,9 @@ $(function () {
     speed: 800,
     slidesToShow: 4,
     slidesToScroll: 1,
-    // infinite: false,  //不開會停止autoplay 0531
-    infinite: true,
-    autoplay: true,
+    infinite: false, //不開會停止autoplay 0531
+    // infinite: true,
+    // autoplay: true,
     autoplaySpeed: 6000,
     dots: true,
     dotsClass: "custom_paging",
@@ -119,7 +119,7 @@ $(function () {
       '<div class="video-next videoBtn"><span class="iconFont icon-cheveron-right"></span></div>',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           slidesToShow: 3,
         },
@@ -138,5 +138,18 @@ $(function () {
       //   }
       // }
     ],
+  });
+  var current_id = null;
+  $("body").on("click", ".video_slick", function () {
+    console.log();
+    var wanted_id = $(this).attr("data-id");
+    if (current_id !== wanted_id) {
+      console.log("in");
+      $("#main_youtube").attr(
+        "src",
+        `https://www.youtube.com/embed/${wanted_id}`
+      );
+      var current_id = wanted_id;
+    }
   });
 });
