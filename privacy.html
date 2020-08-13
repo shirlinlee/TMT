@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>人間福報</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="js.lib/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js.lib/jquery.mCustomScrollbar.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/css_layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/m_css_layout.css" />
+    <!-- 隱私權條款頁only -->
+    <link rel="stylesheet" type="text/css" href="css/privacy.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- fb sdk -->
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"
+    ></script>
+
+    <div class="wrapper">
+      <header id="header">
+        <!-- 功能列 -->
+        <div class="hdTop">
+          <div class="container flexBox">
+            <!-- wheather bar -->
+            <div class="wheatherBox pc">
+              <div class="flexBox">
+                <div class="w_l flexBox">
+                  <div class="cityBox">
+                    <div class="cloudImg">
+                      <img src="images/w.svg" alt="" />
+                    </div>
+                    <div class="city">臺北市</div>
+                  </div>
+                  <div class="temp">30 <span>&deg;C</span></div>
+                </div>
+                <div class="w_r">
+                  <div class="Westdate">
+                    2019年6月4日‧<span class="week">星期二</span>
+                  </div>
+                  <div class="TWdate">己亥年五月初二日</div>
+                </div>
+              </div>
+            </div>
+            <!-- logo -->
+            <h1>
+              <a href="#">
+                人間福報
+                <img src="images/logo.png" alt="人間福報" />
+              </a>
+            </h1>
+            <!-- search bar -->
+            <!-- 搜尋完之後，請執行 $('.searchBox').removeClass('open') && $('.searchClick').removeClass('clicked') -->
+            <div class="searchBox flexBox">
+              <input type="text" placeholder="搜尋什麼..." />
+              <!-- <button type="button">搜尋</button>-->
+              <input type="submit" value="搜尋" />
+              <div class="searchClick"></div>
+              <div class="close mb"></div>
+              <img src="images/search.svg" alt="" class="search_icon mb" />
+            </div>
+          </div>
+          <div class="nowDate">
+            <span class="Westdate">2019年6月4日</span>‧
+            <span class="week">星期二</span>&nbsp;
+            <span class="TWdate">己亥年五月初二日</span>
+          </div>
+        </div>
+
+        <!-- 選單列 -->
+        <div class="navBox">
+          <nav>
+            <div class="container flexBox">
+              <div class="moreBtn"><span></span><span></span><span></span></div>
+              <ul class="navList flexBox">
+                <li class="navLogo">
+                  <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                </li>
+                <li class="firstUl">
+                  <a href="javascript:;"
+                    >星雲大師<span class="iconFont icon-cheveron-down"></span
+                  ></a>
+                  <ul class="inList">
+                    <li><a href="#">星雲法語</a></li>
+                    <li><a href="#">人間佛教</a></li>
+                  </ul>
+                </li>
+                <li class="firstUl">
+                  <a href="javascript:;"
+                    >即時報<span class="iconFont icon-cheveron-down"></span
+                  ></a>
+                  <ul class="inList">
+                    <li><a href="#">即時新聞</a></li>
+                  </ul>
+                </li>
+                <li class="firstUl">
+                  <a href="javascript:;"
+                    >今日新聞<span class="iconFont icon-cheveron-down"></span
+                  ></a>
+                  <ul class="inList">
+                    <li><a href="#">要聞</a></li>
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">綜合</a></li>
+                    <li><a href="#">國際</a></li>
+                    <li><a href="#">兩岸</a></li>
+                    <li><a href="#">奇人妙事</a></li>
+                    <li><a href="#">醫藥</a></li>
+                    <li><a href="#">微閱讀</a></li>
+                    <li><a href="#">微視頻</a></li>
+                    <li><a href="#">微特輯</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">蔬食地圖</a></li>
+                <li><a href="#">友善食農</a></li>
+                <li><a href="#">達人上菜</a></li>
+                <li><a href="#">環保生態</a></li>
+                <li><a href="#">醫藥養生</a></li>
+                <!-- <li><a href="#">福報購</a></li> -->
+              </ul>
+            </div>
+
+            <!-- 次選單 -->
+            <div class="secNavListBox">
+              <div>
+                <ul class="secNavList flexBox">
+                  <li>
+                    <a href="#">
+                      星雲大師
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">星雲法語</a></li>
+                      <li><a href="#">人間佛教</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      即時報
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">即時新聞</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      今日新聞
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">要聞</a></li>
+                      <li><a href="#">焦點</a></li>
+                      <li><a href="#">綜合</a></li>
+                      <li><a href="#">國際</a></li>
+                      <li><a href="#">兩岸</a></li>
+                      <li><a href="#">奇人妙事</a></li>
+                      <li><a href="#">醫藥</a></li>
+                      <li><a href="#">微閱讀</a></li>
+                      <li><a href="#">微視頻</a></li>
+                      <li><a href="#">微特輯</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      百年筆陣
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">社論</a></li>
+                      <li><a href="#">看人間</a></li>
+                      <li><a href="#">百年筆陣</a></li>
+                      <li><a href="#">論壇</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      覺世菩提
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+
+                    <ul class="trdNavList">
+                      <li><a href="#">覺世/宗教</a></li>
+                      <li><a href="#">千家寺院</a></li>
+                      <li><a href="#">福慧共修會</a></li>
+                      <li><a href="#">福報佛學院</a></li>
+                      <li><a href="#">生命書寫</a></li>
+                      <li><a href="#">因緣果報</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      人間善友
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">Hello People</a></li>
+                      <li><a href="#">人間善友</a></li>
+                      <li><a href="#">幸福多一點</a></li>
+                      <li>
+                        <a href="#">小人物<br />大啟發</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      國際兩岸
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">全球視野</a></li>
+                      <li><a href="#">趨勢最前線</a></li>
+                      <li><a href="#">一周看點</a></li>
+                      <li>
+                        <a href="#">兩岸‧<br />不可不知</a>
+                      </li>
+                      <li>
+                        <a href="#">兩岸‧<br />亮點人物</a>
+                      </li>
+                      <li><a href="#">英文好好玩</a></li>
+                      <li><a href="#">星球大小事</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      心靈旅讀
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">藝文</a></li>
+                      <li><a href="#">副刊</a></li>
+                      <li><a href="#">縱橫古今</a></li>
+                      <li><a href="#">閱讀咖啡館</a></li>
+                      <li><a href="#">好書花園</a></li>
+                      <li><a href="#">家庭</a></li>
+                      <li><a href="#">家庭電影院</a></li>
+                      <li><a href="#">動物行星</a></li>
+                      <li><a href="#">紙上博物館</a></li>
+                      <li><a href="#">人間星聞</a></li>
+                      <li><a href="#">說聞解字</a></li>
+                      <li><a href="#">逐光獵影</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      教育運動
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">教育</a></li>
+                      <li><a href="#">運動曼陀羅</a></li>
+                      <li><a href="#">少年天地</a></li>
+                      <li><a href="#">青春up</a></li>
+                      <li><a href="#">三好校園</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      創意生活
+                      <div class="clickArr">
+                        <div class="secNavIcon">
+                          <img src="images/arrowtop.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <ul class="trdNavList">
+                      <li><a href="#">創藝綠生活</a></li>
+                      <li><a href="#">旅遊</a></li>
+                      <li><a href="#">職場加油讚</a></li>
+                      <li><a href="#">八達通</a></li>
+                      <li><a href="#">消費新訊</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <!-- m版 nav 社群連結 -->
+                <div class="m_navMediaBox">
+                  <div class="flexBox">
+                    <a href="#" target="_blank" class="mediaLink">讀報教育</a>
+                    <a href="#" target="_blank" class="mediaLink">海外版</a>
+                    <a href="#" target="_blank" class="mediaSIcon fbIcon"></a>
+                    <a href="#" target="_blank" class="mediaSIcon ytIcon"></a>
+                    <a href="#" target="_blank" class="mediaSIcon igIcon">
+                      <img src="images/ig.svg" alt="" />
+                    </a>
+                    <a href="#" target="_blank" class="mediaSIcon lineIcon"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div id="main">
+        <!-- 麵包屑 -->
+        <div class="crumb">
+          <div class="container">
+            <ul class="flexBox">
+              <li><a href="#">首頁</a><span>></span></li>
+              <li>
+                <a href="#">隱私權條款</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <article>
+          <div class="container writerInfo">
+            <!-- 標題 h1 -->
+            <h1>人間福報網站 隱私權條款</h1>
+
+            <!-- 發佈時間 -->
+            <div class="writerBox">
+              <span class="posTime">2020.08.01</span>
+            </div>
+            <hr class="policyline">  
+            </div>
+          
+
+          <!-- section01 -->
+          <section class="sec_01">
+            <div class="container flexBox" style="position: relative">
+
+              <div class="policyBox">
+                <p>非常歡迎您光臨「人間福報網站」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本 網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：</p>
+                <h3>一、隱私權保護政策的適用範圍</h3>
+                <p>隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。</p>
+                <h3>二、個人資料的蒐集、處理及利用方式</h3>
+                <p>當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。
+                    本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。
+                    於一般瀏覽時，伺服器會自行記錄相關行為，包括您使用連線設備的IP位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，除法律另有規定外，決不對外公佈。
+                    為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。
+                </p>
+                <h3>三、資料之保護</h3>
+                <p>本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的
+                    法律處分。
+                    如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。
+                </p>
+                <h3>四、網站對外的相關連結</h3>
+                <p>本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。</p>
+                <h3>五、與第三人共用個人資料之政策</h3>
+                <p>
+                  本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。
+                  <br/><br/>
+                  前項但書之情形包括不限於：
+                    <ul>
+                      <li>經由您書面同意。</li>
+                      <li>法律明文規定。</li>
+                      <li>為免除您生命、身體、自由或財產上之危險。</li>
+                      <li>與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集者依其揭露方式無從識別特定之當事人。</li>
+                      <li>當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。</li>
+                      <li>有利於您的權益。</li>
+                      <li>本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。</li>
+                    </ul>
+                </p>
+                <h3>六、Cookie之使用</h3>
+                <p>為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的Cookie，若您不願接受Cookie的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕Cookie的寫入，但可能會導致網站某些功能無法正常執行。</p>
+                <h3>七、隱私權保護政策之修正</h3>
+                <p>本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。</p>
+
+              </div>  
+
+            </div>
+          </sectoin>
+          <!-- section02 廣告區 -->
+          <section class="sec_02">
+            <div>
+              <div class="flexBox">
+                <div class="adBanner adB01">
+                  <img src="images/ad-1.png" alt="" />
+                </div>
+                <div class="adBanner adB01">
+                  <img src="images/ad-2.png" alt="" />
+                </div>
+                <div class="adBanner adB01">
+                  <img src="images/ad-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </div>
+
+      <!-- go Top 鈕 -->
+      <div class="goTopBtn"><span class="icon-cheveron-up"></span></div>
+
+      <footer>
+        <div class="infoBox">
+          <div class="container flexBox">
+            <div class="about flexBox">
+              <div class="aboutTxt">
+                <div>關</div>
+                <div>於</div>
+                <div>我</div>
+                <div>們</div>
+              </div>
+              <p class="aboutP">
+                《人間福報》是一份多元化的報紙，不單只有報導佛教新聞，乃以推動祥和社會、淨化人心為職志，以關懷人類福祉、追求世界和平為宗旨，堅持新聞的準度與速度、廣度與深度，關懷弱勢族群與公益；強調內容溫馨、健康、益智、環保，不八卦、不加料、不阿諛，希冀藉由優質的內涵，體貼大眾身心靈的需要、關懷地球永續經營、延續宇宙無窮慧命，是一份承擔社會責任的報紙。自許成為「社會的一道光明」的《人間福報》任重而道遠，在秉持創辦人星雲大師「傳播人間善因善緣」的理念之際，更將堅持為社會注入清流，讓福報的發行為人間帶來祥和歡喜，具體實現「人間有福報，福報滿人間」的目標。
+              </p>
+            </div>
+            <div class="QRbox flexBox">
+              <div class="QRtxt">
+                <div>App</div>
+                下<br class="footBR" />載
+              </div>
+              <div class="QRimg">
+                <img src="images/qrcode.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="socialBox">
+          <div class="container flexBox">
+            <div class="socialIcons flexBox">
+              <a href="index.html" class="foot_logo"
+                ><img src="images/logo.png" alt="人間福報"
+              /></a>
+              <div class="connectBox">
+                <div class="flexBox">
+                  <a href="#" target="_blank" class="mediaIcon fbIcon"></a>
+                  <a href="#" target="_blank" class="mediaIcon ytIcon"></a>
+                  <a href="#" target="_blank" class="mediaIcon igIcon">
+                    <img src="images/ig.svg" alt="" />
+                  </a>
+                  <a href="#" target="_blank" class="mediaIcon lineIcon"></a>
+                </div>
+                <a
+                  href="mailto:newsmaster@merit-times.com.tw"
+                  class="bussinessEmail"
+                  >newsmaster@merit-times.com.tw</a
+                >
+              </div>
+            </div>
+            <div class="getEpaper subEpaperBox flexBox">
+              <input type="text" placeholder="請輸入電郵地址" />
+              <!--<button type="button">立即訂閱</button>-->
+              <input type="submit" value="立即訂閱" />
+            </div>
+          </div>
+        </div>
+
+        <div class="copyRightBox">
+          <p>
+            Copyright &copy; 2019 人間福報 www.merit-times.net
+            <br class="copyBr" />All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+      <!-- pc版 側欄選單 social media -->
+      <div class="socialMedia pc">
+        <a href="javascript:;" class="mediaLink">追蹤我們</a>
+        <a href="#" target="_blank" class="mediaSIcon fbIcon"></a>
+        <a href="#" target="_blank" class="mediaSIcon ytIcon"></a>
+        <a href="#" target="_blank" class="mediaSIcon igIcon">
+          <img src="images/ig.svg" alt="" />
+        </a>
+        <a href="#" target="_blank" class="mediaSIcon lineIcon"></a>
+        <a href="#" target="_blank" class="mediaLink">讀報教育</a>
+        <a href="#" target="_blank" class="mediaLink">海外版</a>
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="js.lib/modernizr-custom.js"></script> -->
+    <script type="text/javascript" src="js.lib/jquery-3.3.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"
+    ></script>
+    <script type="text/javascript" src="js.lib/slick.min.js"></script>
+    <script type="text/javascript" src="js.lib/zebra_pin.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js.lib/jquery.mCustomScrollbar.concat.min.js"
+    ></script>
+    <script type="text/javascript" src="js/layout.js"></script>
+
+    <!-- 各頁不同 -->
+    <script type="text/javascript" src="js/news_inner.js"></script>
+  </body>
+</html>

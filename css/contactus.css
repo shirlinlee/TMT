@@ -1,0 +1,606 @@
+.news_lb {
+    position: relative;
+    padding-left: 0.8rem;
+    /*padding-right: 0.8rem;*/
+}
+.news_rb:not(.adBox) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-left: 0.8rem;
+}
+.newsBb {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.sec_03 .blockTlt{
+    right: calc(100% - 27px);
+    top: auto;
+    bottom: 0;
+}
+
+.blockTlt {
+    font-family: "Noto Serif TC", serif;
+    font-size: 0.48rem;
+    font-weight: 900;
+    letter-spacing: 0.4em;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    position: absolute;
+    right: calc(100% - 37px);
+    height: 100%;
+    top: 0;
+}
+.blockTlt:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6.6em;
+    left: calc(50% - 2px);
+    width: 2px;
+    border-right: 1px solid #d7000f;
+    border-left: 1px solid #d7000f;
+    height: 3.92rem;
+}
+.sec_03 .blockTlt:before {
+    height: calc(100% - 6.6em);
+}
+.fxbImg {
+    max-width: 440px;
+    width: 100%;
+    margin: auto;
+}
+
+
+/** contactBox ******************************************************/
+.contactBox li{
+  font-size: 0.32rem;
+  line-height: 1.75;
+  font-weight:500;
+}
+.contactBox li:nth-child(even){
+  margin-bottom: 20px;
+}
+.contactBox li:nth-child(odd){
+  color:#6a6a6a;
+}
+/** contactInput ******************************************************/
+.getContact{
+  margin: 15px 0;
+}
+.getContact.subContactBox input {
+    background-color: #ffffff;
+    height: 0.92rem;
+    line-height: 0.92rem;
+    
+}
+.subContactBox input {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #b6b6b6;
+    padding: 0 1.2em;
+    line-height: 3.6;
+    background-color: #ffffff;
+}
+/** contactselect ******************************************************/
+.getContact.subContactBox select {
+    background-color: #ffffff;
+    height: 0.92rem;
+    line-height: 0.92rem;
+    
+}
+.subContactBox select {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #b6b6b6;
+    padding: 0 1.2em;
+    line-height: 3.6;
+    background-color: #ffffff;
+    
+}
+.subContactBox option[disabled="disabled"]{
+  color: #b6b6b6;
+  }
+.con-dropdown{
+  background: url("../images/secarrow.png");
+  background-position: right 0px center;
+  background-repeat: no-repeat;
+}
+textarea, input, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} 
+
+.subContactBox textarea {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #b6b6b6;
+    padding: 0 1.2em;
+    line-height: 3.6;
+    background-color: #ffffff;
+    height: 176px;
+}
+.getContact.subContactBox input[type="submit"] {
+    margin-top: 0;
+    line-height: 0.92rem;
+    width: 1.76rem;
+    letter-spacing: 0.075em;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border: 1px solid #f25d27;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #f25d27;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.getContact.subContactBox input[type="submit"]:hover{
+  opacity: 0.8;
+}
+.submitBox{
+      justify-content: flex-end;
+}
+
+/** crumb ******************************************************/
+.crumb{
+  background-color: #eff0ef;
+}
+
+.crumb .container {
+  max-width: 1100px;
+  font-size: 13px;
+  color: #b6b6b6;
+  letter-spacing: 0.98px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-top: 1rem;
+}
+
+.crumb a {
+  display: inline-block;
+  color: #b6b6b6;
+}
+
+.crumb a:hover {
+  color: #212121;
+}
+
+.crumb li span {
+  display: inline-block;
+  width: 1.6em;
+  text-align: center;
+}
+
+.writerInfo {
+  font-family: "Noto Serif TC", serif;
+}
+
+.policyline{
+  border-top:1px solid  #b6b6b6;
+}
+
+article h1 {
+  font-size: 0.8rem;
+  line-height: 1.43;
+  font-weight: bold;
+  opacity: 1;
+  color: #000000;
+  text-indent: 0;
+  width: auto;
+  max-width: none;
+  margin-top: 0.8rem;
+}
+
+.writerBox {
+  font-size: 0.26rem;
+  line-height: 1;
+  color: #b5b5b5;
+  font-weight: 200;
+  margin-top: 0.5rem;
+}
+
+span.writer {
+  color: #6a6a6a;
+  font-weight: bold;
+}
+
+span.posTime {
+  font-style: italic;
+}
+
+.mediaShareBox {
+  font-family: "Noto Sans TC", sans-serif;
+  width: 100%;
+  border-top: 1px solid #a3a3a3;
+  margin-top: 0.36rem;
+  padding: 0.3rem 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.maShareBtn {
+  font-size: 0.3rem;
+  font-weight: 500;
+  color: #ffffff;
+  height: 0.8rem;
+  width: 0.8rem;
+  line-height: 0.8rem;
+  /* padding: 0 0.5rem; */
+  background-color: #595b5a;
+  margin-right: 0.2rem;
+  background-repeat: no-repeat;
+  background-size: auto 0.35rem;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.maShareBtn:hover {
+  opacity: 0.8;
+}
+
+/* .maShareBtn:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 25%;
+  right: 0.73rem;
+} */
+
+.maShareBtn.fbS {
+  background-color: #3b579d;
+  background-image: url(../images/fb.svg);
+  /* background-position: center right 0.32rem; */
+}
+
+.maShareBtn.lineS {
+  background-color: #00b900;
+  background-image: url(../images/line.svg);
+  /* background-position: center right 0.2rem; */
+}
+
+.maShareBtn.printS {
+  background-image: url(../images/p.svg);
+  /* background-position: center right 0.2rem; */
+}
+
+.maShareBtn.copyS {
+  background-image: url(../images/linkcopy.svg);
+  background-size: auto 0.28rem;
+  /* background-position: center right 0.16rem; */
+}
+
+
+/* 字級大小 */
+.toolBox {
+  justify-content: space-between;
+}
+.smbTxtBox {
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.3rem;
+  color: #595b5a;
+  font-weight: normal;
+}
+.smbTxt {
+  color: #f25d27;
+  line-height: 0.72rem;
+  width: 0.72rem;
+  border: 1px solid #f25d27;
+  border-radius: 6px;
+  text-align: center;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.smbTxt.active,
+.smbTxt:hover {
+  background-color: #f25d27;
+  color: #ffffff;
+}
+.smbTxtB {
+  font-size: 0.4rem !important;
+}
+.smbTxtM {
+  font-size: 0.32rem !important;
+}
+.smbTxtS {
+  font-size: 0.26rem !important;
+}
+
+/** 文字編輯器 **************************/
+table,
+tbody,
+th,
+td,
+tr {
+  border: 1;
+}
+
+.policyBox {
+  padding-bottom: 0.1rem;
+  font-size: 0.32rem;
+  line-height: 1.75;
+  color: #6a6a6a;
+  font-weight: 500;
+  margin-bottom: 2em;
+  text-align: justify;
+  letter-spacing: normal;
+  padding: 0 10px;
+}
+
+.policyBox h3{
+  color: #000;
+  font-size: 18px;
+  line-height: 28px;
+
+}
+
+.policyBox a {
+  display: inline;
+}
+
+.policyBox p {
+  font-size: 0.32rem;
+  line-height: 28px;
+  color: #6a6a6a;
+  font-weight: 500;
+  margin-bottom: 2em;
+  text-align: justify;
+  letter-spacing: normal; 
+}
+
+.policyBox ul {
+  list-style-type: disc;
+  padding-left: 40px; 
+}
+
+
+/** 方形廣告 banner ***********************/
+.googleAdBannerBox {
+  max-width: 300px;
+}
+
+.googleAdBannerBox > div {
+  margin-top: 0.5rem;
+  cursor: pointer;
+  /* width: 300px; */
+}
+
+/* 字級 */
+.toolBox {
+  display: block;
+}
+.smbTxtBox {
+  justify-content: flex-start;
+  margin-top: 0.36rem; 
+}
+.smbTxt {
+   color: #f25d27;
+  line-height: 0.72rem;
+  width: 0.72rem;
+}
+.smbTxtB {
+  font-size: 0.4rem !important;
+}
+.smbTxtM {
+  font-size: 0.32rem !important;
+}
+.smbTxtS {
+  font-size: 0.26rem !important;
+}
+
+
+/** 文字編輯器 **************************/
+
+.policyBox p,
+.policyBox div {
+  margin-bottom: 1.8em;
+}
+
+.policyBox figcaption {
+  margin-bottom: 0.7rem;
+}
+
+.policyBox figure {
+  line-height: 1.4;
+   min-height: 2.8em;
+}
+
+.policyBox div {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+
+/** sec_01 **********************************/
+.sec_01 {
+   margin-top: 0.46rem;
+}
+
+.sec_01 .container {
+   /* max-width: 1070px; */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+   justify-content: space-between;
+   position: relative;
+} 
+
+  /** sec_02 ****************************/
+.sec_02 {
+  background-color: #fbefef;
+  padding: 1rem 0;
+}
+
+.sec_02 .flexBox {
+  width: calc(100% - 30px);
+  max-width: 1000px;
+  min-width: 980px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.adBanner {
+  width: 300px;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+.adBanner:last-child {
+  margin-right: 0;
+}
+  /** sec_03 ****************************/
+.sec_03 .container {
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+}
+.sec_03 .container > .flexBox {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1160px) {
+  .news_lb {
+    padding-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 1080px) {
+  .gAd_KVCloseBtn {
+    right: 10px;
+  }
+  .newsBb {
+    width: 48%;
+  }
+  .blockTlt {
+    right: auto;
+    left: calc(30px - 0.5em);
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .blockTlt {
+    left: calc(15px - 0.5em);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .crumb {
+    margin-top: 1.8rem;
+    background-color: #eff0ef;
+    padding-bottom: 0.36rem;
+    padding-bottom: 0;
+  }
+  .sec_03 .blockTlt, .sec_03 .news_rb .blockTlt {
+    right: auto;
+    left: -7px;
+  }
+}
+
+
+/*@media screen and (max-width: 480px) {
+  .mediaShareBox {
+    display: block;
+    padding: 0.5rem 0;
+  }
+  .mediaShareBox > div {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .maShareBtn {
+    width: 94px;
+    margin-right: 9px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-size: auto 0.46rem;
+  }
+
+  .maShareBtn:last-child {
+    margin-right: 9px;
+  }
+
+  .voiceBox {
+    margin-top: 0.4rem;
+  }
+
+  .audioBox {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .googleAdBannerBox {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}*/
+
+@media screen and (max-width: 480px) {
+  /* .crumb ul {
+    overflow-x: scroll;
+  } */
+
+  article h1 {
+    font-size: 0.52rem;
+  }
+
+  .mediaShareBox {
+    margin-top: 0.5rem;
+  }
+
+  .npTlt {
+    display: none;
+  }
+
+  .relatedATBox {
+    padding-top: 0.6rem;
+  }
+  .newsBb {
+    width: auto;
+  }
+  .flexBox .news_lb {
+    margin-bottom: 1rem;
+  }
+  .sec_03 .container > .flexBox {
+    display: block;
+    padding: 0 10px;
+  }
+  .getContact.subContactBox input[type="submit"]{
+    width: 100%;
+  }
+}
