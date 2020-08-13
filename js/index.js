@@ -103,7 +103,7 @@ $(function () {
     arrows: true,
     speed: 800,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     infinite: false, //不開會停止autoplay 0531
     // infinite: true,
     // autoplay: true,
@@ -111,7 +111,8 @@ $(function () {
     dots: true,
     dotsClass: "custom_paging",
     customPaging: function (slider, i) {
-      return i + 1 + "/" + slider.slideCount;
+      console.log(slider);
+      return i + 1 + "/" + Math.ceil(slider.slideCount / 4);
     },
     prevArrow:
       '<div class="video-prev videoBtn"><span class="iconFont icon-cheveron-left"></span></div>',
@@ -122,12 +123,22 @@ $(function () {
         breakpoint: 769,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 3,
+          customPaging: function (slider, i) {
+            console.log(slider);
+            return i + 1 + "/" + Math.ceil(slider.slideCount / 3);
+          },
         },
       },
       {
         breakpoint: 599,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
+          customPaging: function (slider, i) {
+            console.log(slider);
+            return i + 1 + "/" + Math.ceil(slider.slideCount / 2);
+          },
         },
       },
       // {
@@ -149,6 +160,8 @@ $(function () {
         "src",
         `https://www.youtube.com/embed/${wanted_id}`
       );
+      $(".video_slick").removeClass("seeing");
+      $(this).addClass("seeing");
       var current_id = wanted_id;
     }
   });
