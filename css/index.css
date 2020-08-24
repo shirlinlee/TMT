@@ -494,6 +494,12 @@ a.newsListTlt:hover {
   position: relative;
   max-width: 630px;
   margin: 0 auto;
+  display: flex;
+}
+
+
+.liveVideo.ig img {
+  margin-top: 54px;
 }
 
 .liveIcon {

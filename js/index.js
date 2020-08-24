@@ -151,18 +151,43 @@ $(function () {
     ],
   });
   var current_id = null;
+
   $("body").on("click", ".video_slick", function () {
-    console.log();
     var wanted_id = $(this).attr("data-id");
+    var wanted_source = $(this).attr("data-source");
     if (current_id !== wanted_id) {
       console.log("in");
-      $("#main_youtube").attr(
-        "src",
-        `https://www.youtube.com/embed/${wanted_id}`
-      );
+      $("#media_player").html(media(wanted_source, wanted_id));
       $(".video_slick").removeClass("seeing");
+      $(".liveVideo").removeClass("ig .fb .yt").addClass(wanted_source);
       $(this).addClass("seeing");
       var current_id = wanted_id;
     }
   });
 });
+
+function media(media, id) {
+  console.log(media, id);
+  switch (media) {
+    case "yt":
+      return (
+        '<iframe id="main_youtube" src="https://www.youtube.com/embed/' +
+        id +
+        '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      );
+    case "ig": {
+      return (
+        '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/' +
+        id +
+        '/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12"></blockquote><script async src="//www.instagram.com/embed.js"></script>'
+      );
+    }
+
+    default:
+      return (
+        '<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1611975482350171%2Fvideos%2F' +
+        id +
+        '%2F&show_text=0&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>'
+      );
+  }
+}
