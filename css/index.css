@@ -24,14 +24,18 @@
   z-index: 199;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(55%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 55%,
-      rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
 }
 
 .slickTent img {
@@ -48,14 +52,18 @@
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(55%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 55%,
-      rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
 }
 
 /* .slick a .slickTent img {
@@ -301,14 +309,18 @@ ul.custom_paging {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(55%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 55%,
-      rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
   z-index: 5;
 }
 
@@ -419,7 +431,7 @@ a.newsListTlt:hover {
   font-weight: 200;
 }
 
-.newsLisBox~.seeMore {
+.newsLisBox ~ .seeMore {
   display: none;
 }
 
@@ -490,15 +502,14 @@ a.newsListTlt:hover {
   height: 3.92rem;
 }
 
-.liveVideo {
+#liveVideo {
   position: relative;
   max-width: 630px;
   margin: 0 auto;
   display: flex;
 }
 
-
-.liveVideo.ig img {
+#liveVideo.ig img {
   margin-top: 54px;
 }
 
@@ -530,7 +541,7 @@ a.newsListTlt:hover {
   top: calc(50% - 2px);
 }
 
-.liveVideo iframe {
+#liveVideo iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -551,31 +562,30 @@ a.newsListTlt:hover {
 }
 
 .video_slick img {
-  transition: all .6s;
+  transition: all 0.6s;
   background-size: cover;
   background-position: center;
-
 }
 
 .video_slick:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
   background-image: url(../images/play.svg);
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
   cursor: pointer;
-  transition: all .6s;
-  -webkit-transition: all .6s;
-  -moz-transition: all .6s;
-  -ms-transition: all .6s;
-  -o-transition: all .6s;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
 }
 
 @media only screen and (min-width: 769px) {
@@ -591,8 +601,6 @@ a.newsListTlt:hover {
     opacity: 1;
   }
 }
-
-
 
 .videoBtn {
   width: 30px;
@@ -712,14 +720,18 @@ a.seeMoreLink:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(55%, rgba(255, 255, 255, 0)),
-      to(rgba(255, 255, 255, 1)));
-  background-image: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(255, 255, 255, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 55%,
+    rgba(255, 255, 255, 1)
+  );
 }
 
 .ePaperBox .seeMore {
@@ -746,14 +758,18 @@ a.seeMoreLink:hover {
 .kv02 {
   background-color: #212121;
   overflow: hidden;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(55%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 55%,
-      rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
 }
 
 .kv02Img {
@@ -777,14 +793,18 @@ a.seeMoreLink:hover {
   z-index: 199;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(55%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 55%,
-      rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(55%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 1)
+  );
 }
 
 .kv02Img img {
@@ -1003,14 +1023,18 @@ a.itemLink:hover p.itemTlt {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(45%, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 1)));
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 45%,
-      rgba(0, 0, 0, 1));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(45%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 45%,
+    rgba(0, 0, 0, 1)
+  );
   /* background-color: #000000; */
 }
 
@@ -1059,7 +1083,7 @@ a.itemLink:hover .itemDescribe {
   padding-top: 0.8rem;
 }
 
-.sec_03 .container>.flexBox {
+.sec_03 .container > .flexBox {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1123,7 +1147,7 @@ a.itemLink:hover .itemDescribe {
   width: 100%;
 }
 
-.tentBlock>li {
+.tentBlock > li {
   border-bottom: 1px solid rgba(182, 182, 182, 0.8);
   padding-bottom: 0.16rem;
   padding-top: 0.28rem;

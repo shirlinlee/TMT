@@ -136,7 +136,7 @@ $(function () {
           slidesToShow: 2,
           slidesToScroll: 2,
           customPaging: function (slider, i) {
-            console.log(slider);
+            // console.log(slider);
             return i + 1 + "/" + Math.ceil(slider.slideCount / 2);
           },
         },
@@ -151,15 +151,18 @@ $(function () {
     ],
   });
   var current_id = null;
+  setTimeout(function () {
+    $("body").find(".video_slick:first-child").trigger("click");
+  }, 1000);
 
   $("body").on("click", ".video_slick", function () {
     var wanted_id = $(this).attr("data-id");
     var wanted_source = $(this).attr("data-source");
+    console.log(wanted_id);
     if (current_id !== wanted_id) {
-      console.log("in");
       $("#media_player").html(media(wanted_source, wanted_id));
       $(".video_slick").removeClass("seeing");
-      $(".liveVideo").removeClass("ig .fb .yt").addClass(wanted_source);
+      $("#liveVideo").removeClass().addClass(wanted_source);
       $(this).addClass("seeing");
       var current_id = wanted_id;
     }
@@ -167,7 +170,6 @@ $(function () {
 });
 
 function media(media, id) {
-  console.log(media, id);
   switch (media) {
     case "yt":
       return (
@@ -176,10 +178,15 @@ function media(media, id) {
         '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
       );
     case "ig": {
+      // return (
+      //   '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/' +
+      //   id +
+      //   '/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12"></blockquote><script async src="//www.instagram.com/embed.js"></script>'
+      // );
       return (
-        '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/' +
+        '<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/' +
         id +
-        '/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12"></blockquote><script async src="//www.instagram.com/embed.js"></script>'
+        '/embed/captioned/?cr=1&amp;v=12&amp;rd=http%3A%2F%2F127.0.0.1%3A5501&amp;rp=%2Findex.html#%7B%22ci%22%3A0%2C%22os%22%3A9701.630000010482%2C%22ls%22%3A9693.14500001201%2C%22le%22%3A9695.449999999255%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="0" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background-color: white; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>'
       );
     }
 
