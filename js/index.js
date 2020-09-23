@@ -158,11 +158,11 @@ $(function () {
   $("body").on("click", ".video_slick", function () {
     var wanted_id = $(this).attr("data-id");
     var wanted_source = $(this).attr("data-source");
-    console.log(wanted_id);
+    var isLiving = $(this).find('.liveIcon').length;
     if (current_id !== wanted_id) {
       $("#media_player").html(media(wanted_source, wanted_id));
       $(".video_slick").removeClass("seeing");
-      $("#liveVideo").removeClass().addClass(wanted_source);
+      $("#liveVideo").removeClass().addClass(wanted_source).find('.liveIcon').css({'display':(isLiving)? 'block':'none'});
       $(this).addClass("seeing");
       var current_id = wanted_id;
     }

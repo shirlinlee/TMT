@@ -553,13 +553,17 @@ a.newsListTlt:hover {
 	/* overflow: hidden; */
 }
 
+.img_wrapper {
+	position: relative;
+}
+
 .video_slick img {
 	transition: all 0.6s;
 	background-size: auto 100%;
 	background-position: center;
 }
 
-.video_slick:after {
+.img_wrapper:after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -590,7 +594,7 @@ a.newsListTlt:hover {
     -o-transform: scale(1.05); */
 	}
 
-	.video_slick:hover:after {
+	.video_slick:hover .img_wrapper:after {
 		opacity: 1;
 	}
 }
