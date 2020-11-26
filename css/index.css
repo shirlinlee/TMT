@@ -433,7 +433,7 @@ a.newsListTlt:hover {
 	content: "";
 	display: block;
 	width: 150vw;
-	height: 190%;
+	height: 194%;
 	position: absolute;
 	top: -0.6rem;
 	left: -30vw;
@@ -542,14 +542,15 @@ a.newsListTlt:hover {
 	width: calc(100% - 50px);
 	margin-left: 50px;
 }
-
+/*
 .slick-track {
-	padding-top: 30px; /* 預留給直播的空白 */
+	padding-top: 30px;  預留給直播的空白 
 }
-
+*/
 .video_slick {
 	position: relative;
 	margin-right: 15px;
+	margin-top: 30px;
 	/* overflow: hidden; */
 }
 
